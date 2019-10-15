@@ -11482,6 +11482,22 @@ video {
   z-index: auto;
 }
 
+.top-full{
+  top: 100%;
+}
+
+.bottom-full{
+  bottom: 100%;
+}
+
+.show-hide-dropnav{
+  visibility: hidden;
+}
+
+.navItem:hover .show-hide-dropnav{
+  visibility: visible;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

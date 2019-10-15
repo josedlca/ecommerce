@@ -3,3 +3,18 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.top-full{
+	top: 100%;
+}
+.bottom-full{
+	bottom: 100%;
+}
+
+.show-hide-dropnav{
+	visibility: hidden;
+}
+
+.navItem:hover .show-hide-dropnav{
+	visibility: visible;
+}
