@@ -12,12 +12,14 @@
 }
 
 .show-hide-dropnav,
-.show-hide-buyModal{
+.show-hide-buyModal,
+.show-hide-opacityCap{
 	visibility: hidden;
 }
 
 .navItem:hover .show-hide-dropnav,
-.buyIcon:hover .show-hide-buyModal{
+.buyIcon:hover .show-hide-buyModal,
+.buyIcon:hover + .show-hide-opacityCap{
 	visibility: visible;
 }
 
