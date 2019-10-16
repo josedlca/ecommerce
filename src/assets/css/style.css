@@ -11,11 +11,13 @@
 	bottom: 100%;
 }
 
-.show-hide-dropnav{
+.show-hide-dropnav,
+.show-hide-buyModal{
 	visibility: hidden;
 }
 
-.navItem:hover .show-hide-dropnav{
+.navItem:hover .show-hide-dropnav,
+.buyIcon:hover .show-hide-buyModal{
 	visibility: visible;
 }
 
