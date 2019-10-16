@@ -11498,6 +11498,10 @@ video {
   visibility: visible;
 }
 
+.cards article:nth-child(4n){
+  padding-right: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

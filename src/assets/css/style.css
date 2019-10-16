@@ -18,3 +18,7 @@
 .navItem:hover .show-hide-dropnav{
 	visibility: visible;
 }
+
+.cards article:nth-child(4n){
+	padding-right: 0;
+}
