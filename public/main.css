@@ -11510,6 +11510,26 @@ video {
   border-bottom: 2px solid black;
 }
 
+.dothOne::after{
+  content: "";
+  width: 180%;
+  background: red;
+  height: 2px;
+  position: absolute;
+  left: 100%;
+  z-index: 0;
+}
+
+.dothTwo::before{
+  content: "";
+  width: 180%;
+  background: red;
+  height: 2px;
+  position: absolute;
+  right: 100%;
+  z-index: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
