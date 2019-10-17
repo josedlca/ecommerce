@@ -11498,12 +11498,16 @@ video {
 
 .navItem:hover .show-hide-dropnav,
 .buyIcon:hover .show-hide-buyModal,
-.buyIcon:hover + .show-hide-opacityCap{
+.buyIcon:hover ~ .show-hide-opacityCap{
   visibility: visible;
 }
 
 .cards article:nth-child(4n){
   padding-right: 0;
+}
+
+.ventanaProducto li:not(:last-child){
+  border-bottom: 2px solid black;
 }
 
 @media (min-width: 640px) {
