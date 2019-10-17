@@ -94,21 +94,26 @@
 					</div>
 				</div>
 			</div>
+			<!-- datos personales end-->
 
-			<div class="w-full flex flex-col border-2 border-black py-4 px-2 bg-white">
+			<!-- elije direccion -->
+			<div id="backDireccion" class="w-full flex flex-col border-2 border-black py-4 px-2 bg-white">
 				<div class="w-full mb-3 px-2">
 					<p class="text-lg font-bold">Elije direccion de envio</p>
 				</div>
 				<div class="w-full flex flex-row">
 					<div class="w-1/5 flex flex-col">
-						<div class="p-2">
+						<a href="#newAdressPopup" class="p-2">
+							<!-- elejir nueva direccion -->
 							<div class="w-full flex items-center cursor-pointer justify-center h-24 border-2 border-dashed border-black rounded-lg">
 								<p>Agregar direccion</p>
 							</div>
-						</div>
+							<!-- elejir nueva direccion end-->
+						</a>
 					</div>
 				</div>
 			</div>
+			<!-- elije direccion end-->
 			<div class="w-full flex flex-row justify-between items-center border-2 border-black py-4 px-2 bg-gray-900">
 				<div class="w-1/3 flex flex-row">
 					<div class="w-1/3 flex flex-col px-2">						
@@ -142,5 +147,77 @@
 	<footer class=" bg-indigo-900 text-center text-white font-semibold py-4 absolute bottom-0 w-full">
 		Pie de pagina
 	</footer>
+	<!-- newAdressPopup -->
+	<div id="newAdressPopup" class="w-full h-full fixed flex top-0 left-0 z-20">
+		<div class="container mx-auto flex justify-center items-center">
+			<div class="w-6/12 border-2 relative border-black bg-white py-4 px-2 flex flex-col">
+				<div class="w-full flex justify-center">
+					<p class="text-xl font-semibold">
+						Nueva Direccion
+					</p>
+				</div>
+				<div class="w-full flex flex-row">
+					<div class="w-1/2 flex flex-col px-2">
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Celular*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Departamento*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Lima</option>
+								<option>Piura</option>
+								<option>Ica</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Distrito*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Lima</option>
+								<option>Piura</option>
+								<option>Ica</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Referencia*</label>
+							<textarea class="w-full border-2 border-black outline-none"></textarea>
+						</div>
+					</div>
+					<div class="w-1/2 flex flex-col px-2">						
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Tipo de vivienda*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Casa</option>
+								<option>Cuarto</option>
+								<option>Departamento</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Provincia*</label>
+							<select class="w-full border-2 border-black outline-none">
+								<option>Lima</option>
+								<option>Huaral</option>
+								<option>Huaraz</option>
+							</select>
+						</div>
+						<div class="w-full flex flex-col mb-3">
+							<label class="font-semibold text-xs">Direccion*</label>
+							<input class="w-full border-2 border-black outline-none" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="w-full flex justify-center">
+					<button class="focus:outline-none font-semibold text-white bg-red-700 border-2 border-black py-1 px-2">
+						Guardar direccion
+					</button>
+				</div>
+				<a href="#backDireccion" class="absolute top-0 right-0 mr-1 mt-1">
+					<svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zM11.4 10l2.83-2.83-1.41-1.41L10 8.59 7.17 5.76 5.76 7.17 8.59 10l-2.83 2.83 1.41 1.41L10 11.41l2.83 2.83 1.41-1.41L11.41 10z"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
   </body>
 </html>

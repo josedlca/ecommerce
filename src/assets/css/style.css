@@ -41,3 +41,20 @@
 	left: 50%;
 	z-index: 0;
 }
+
+#newAdressPopup{
+	-webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	visibility: hidden;
+}
+
+#newAdressPopup:target{
+	opacity: 1;
+	visibility: visible;
+}
+
+#newAdressPopup textarea{
+	resize: none;
+}
