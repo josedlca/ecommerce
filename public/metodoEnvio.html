@@ -17,12 +17,108 @@
 		</section>
 	</header>
 	<main class="w-full pb-5">
+		<!-- hola user -->
 		<div class="w-full border-b-2 border-gray-400">
 			<div class="container py-1 mx-auto text-right">
 				<p>Hola Mario</p>
 			</div>
 		</div>
+		<!-- hola user end -->
 		<div class="container mx-auto">
+
+			<div class="w-full flex flex-col bg-white border-2 border-black">
+				<div class="w-full flex px-4 py-2 border-b-2">
+					<p class="font-bold text-xl ">Elije metodo de envio</p>
+				</div>
+				<div class="w-full flex flex-row py-1">
+					<div class="w-3/5 flex flex-col px-4">
+						<p class="text-sm font-semibold">Enviado por</p>
+						<p class="text-xl font-bold text-red-700">Belleza D&C</p>
+					</div>
+					<div class="w-1/5 flex flex-col">
+						<p class="text-sm font-semibold">Coste de envio</p>
+						<p class="font-bold">S/0.00</p>
+					</div>
+					<div class="w-1/5 flex flex-col px-4">
+						<p class="text-sm font-semibold">Fecha y hora de Entrega</p>
+						<p class="font-bold">10/10/2019  10:00 am</p>
+					</div>
+				</div>
+
+				<div class="w-full flex flex-row px-2 mb-3">
+					<div class="w-2/5 px-2">
+						<div class="w-full flex flex-col border-2 border-black p-3 bg-red-700">
+							<p class="text-sm text-white mb-3">
+								El horario de entrega es de 9:00 am a 08:00pm
+							</p>
+							<div class="border-2 flex flex-row items-center justify-between bg-white border-2 border-black py-2 px-3">
+								<label for="precio">
+									<p class="font-bold text-sm">Programado</p>
+									<p class="text-xs">Costo S/0.00</p>
+								</label>
+								<input type="radio" name="precio">
+							</div>							
+						</div>
+					</div>
+					<div class="w-3/5 px-2">
+						<div class="w-full flex flex-row border-2 border-black px-1 py-2 bg-gray-400">
+							<div class="w-1/2 px-1">
+								<div class="w-full flex flex-row px-1 py-1 h-32 items-center bg-white">
+									<div class="w-1/3 h-full">
+										<img class="w-full h-full" src="https://via.placeholder.com/150">
+									</div>
+									<div class="w-2/3 flex flex-col pl-2">
+										<p>Shampoo Revlon 200ml - Funcion Repara, Amazonia</p>
+										<p class="font-bold">Cantidad: 1 und</p>
+									</div>
+								</div>
+							</div>
+							<div class="w-1/2 px-1">
+								<div class="w-full flex flex-row px-1 py-1 h-32 items-center bg-white">
+									<div class="w-1/3 h-full">
+										<img class="w-full h-full" src="https://via.placeholder.com/150">
+									</div>
+									<div class="w-2/3 flex flex-col pl-2">
+										<p>Shampoo Revlon 200ml - Funcion Repara, Amazonia</p>
+										<p class="font-bold">Cantidad: 1 und</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full p-4">
+					<div class="w-full flex flex-row border-2 border-black p-3">
+						<div class="w-1/2 flex flex-col">
+							<p>¿Para que dia quieres programar tu envio?</p>
+						</div>
+						<div class="w-1/2 flex flex-col">
+							<div class="w-full flex flex-row items-center mb-3">
+								<div class="w-7/12 flex">
+									<p>Escoge otra fecha</p>
+								</div>
+								<div class="w-5/12 flex">
+									<input class="border-2 border-black w-full" type="date">
+								</div>
+							</div>
+							<div class="w-full flex flex-row items-center mb-3">
+								<div class="w-7/12 flex">
+									<p>Escoge hora de la entrega</p>
+								</div>
+								<div class="w-5/12 flex">
+									<input class="border-2 border-black w-full" type="time">
+								</div>
+							</div>
+							<div class="w-full text-center">
+								<p class="text-red-700 font-bold">El horario de entrega es de 9:00am a 8:00pm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- barra de cuenta total -->
 			<div class="w-full flex flex-row justify-between items-center border-2 border-black py-4 px-2 bg-gray-900">
 				<div class="w-1/3 flex flex-row">
 					<div class="w-1/3 flex flex-col px-2">						
@@ -51,6 +147,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- barra de cuenta total end-->
 		</div>
 	</main>
 	<footer class=" bg-indigo-900 text-center text-white font-semibold py-4 absolute bottom-0 w-full">
