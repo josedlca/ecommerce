@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+    <title>ecommerce</title>
+  </head>
+  <body class="relative h-screen bg-gray-200 ">
+	<header class="w-full bg-red-700">
+		<section class="container mx-auto flex flex-row items-center h-16">
+			<a class=" text-2xl text-white font-bold w-1/5" href="#">Belleza D&C</a>
+			<div class="flex self-center w-3/5 justify-center">
+				<p class="text-xl text-white font-semibold">Proceso de compra</p>
+			</div>
+		</section>
+	</header>
+	<main class="w-full pb-5">
+		<div class="w-full border-b-2 border-gray-400">
+			<div class="container py-1 mx-auto text-right">
+				<p>Hola Mario</p>
+			</div>
+		</div>
+		<div class="container mx-auto">
+			<!-- circulos de los pasos -->
+			<div class="w-full flex items-center flex-col py-4">
+				<div class="w-6/12 flex flex-row">
+					<div class="w-1/3 flex flex-row justify-center dothOne relative ">
+						<div class="text-white z-10 flex justify-center items-center text-xl bg-red-700 rounded-full w-12 h-12">1</div>
+					</div>
+					<div class="w-1/3 flex flex-row justify-center dothOne relative">
+						<div class="text-white z-10 flex justify-center items-center text-xl bg-red-700 rounded-full w-12 h-12">2</div>
+					</div>
+					<div class="w-1/3 flex flex-row justify-center">
+						<div class="text-white flex z-10 justify-center items-center text-xl bg-red-700 rounded-full w-12 h-12">3</div>
+					</div>
+				</div>
+				<div class="w-6/12 flex flex-row">
+					<div class="w-1/3 flex justify-center">
+						<p class="text-sm font-semibold">Envio</p>
+					</div>
+					<div class="w-1/3 flex justify-center">
+						<p class="text-sm font-semibold">Pago</p>
+					</div>
+					<div class="w-1/3 flex justify-center">
+						<p class="text-sm font-semibold">Resumen</p>
+					</div>
+				</div>
+			</div>
+			<!-- circulos de los pasos fin-->
+
+			<div class="w-full flex flex-col border-2 border-black py-4 px-2 bg-white">
+				<div class="w-1/2 flex flex-col px-2">
+					<div class="w-full mb-3">
+						<p class="text-lg font-bold">Resumen del pago</p>
+					</div>
+				</div>
+
+				<div class="w-full flex flex-row">
+					<div class="flex w-8/12 flex-col">
+						<div class="w-full flex flex-col px-2 mb-3">
+							<div class="w-full flex flex-row py-3 px-2 bg-white border-2 border-black mb-2">
+								<div class="w-3/6">
+									<p class="font-bold">Producto</p>
+								</div>
+								<div class="w-1/6">
+									<p class="font-bold">Precio</p>
+								</div>
+								<div class="w-1/6">
+									<p class="font-bold">Cantidad</p>
+								</div>
+								<div class="w-1/6">
+									<p class="font-bold">Subtotal</p>
+								</div>
+							</div>
+							<ul class="w-full flex flex-col bg-white border-2 border-black ventanaProducto">
+								<li class=" w-full flex flex-row py-3 px-2 h-24">
+									
+									<div class=" w-3/6 flex flex-row h-full items-center">
+										<div class=" w-1/4 h-full">
+											<img class="w-full h-full" src="https://via.placeholder.com/300" alt="placeholder">
+										</div>
+										<div class="w-3/4">
+											<div class="w-full px-2">
+												<p class="font-bold">Marca: Revlon</p>
+												<p class=" leading-none font-semibold">Shampoo Revlon 200ml - Funcion Repara</p>
+											</div>
+										</div>								
+									</div>
+									<div class=" w-1/6 flex items-center">
+										<p class=" font-semibold text-black text-lg">S/51.20</p>
+									</div>
+		
+									<div class=" w-1/6 flex items-center">		
+										<div class="w-full flex flex-row  pr-3">							
+											<div class="w-1/3">											
+												<button class="w-full border rounded-lg bg-gray-200 focus:outline-none">-</button>
+											</div>
+											<div class="w-1/3">
+												<input class="w-full border outline-none" type="text">
+											</div>
+											<div class="w-1/3">
+												<button class="w-full border rounded-lg bg-gray-200 focus:outline-none">+</button>								
+											</div>
+										</div>								
+									</div>
+		
+									<div class="w-1/6 flex flex-row items-center justify-between">
+										<p class=" font-semibold text-black text-lg">S/51.20</p>
+		
+										<svg class=" w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+											<path d="M6 2l2-2h4l2 2h4v2H2V2h4zM3 6h14l-1 14H4L3 6zm5 2v10h1V8H8zm3 0v10h1V8h-1z"/>
+										</svg>															
+									</div>
+		
+								</li>
+								<li class=" w-full flex flex-row py-3 px-2 h-24">
+									<div class=" w-3/6 flex flex-row h-full items-center">
+										<div class=" w-1/4 h-full">
+											<img class="w-full h-full" src="https://via.placeholder.com/300" alt="placeholder">
+										</div>
+										<div class="w-3/4">
+											<div class="w-full px-2">
+												<p class="font-bold">Marca: Revlon</p>
+												<p class=" leading-none font-semibold">Shampoo Revlon 200ml - Funcion Repara</p>
+											</div>
+										</div>								
+									</div>
+									<div class=" w-1/6 flex items-center">
+										<p class=" font-semibold text-black text-lg">S/51.20</p>
+									</div>
+		
+									<div class=" w-1/6 flex items-center">		
+										<div class="w-full flex flex-row  pr-3">							
+											<div class="w-1/3">											
+												<button class="w-full border rounded-lg bg-gray-200 focus:outline-none">-</button>
+											</div>
+											<div class="w-1/3">
+												<input class="w-full border outline-none" type="text">
+											</div>
+											<div class="w-1/3">
+												<button class="w-full border rounded-lg bg-gray-200 focus:outline-none">+</button>								
+											</div>
+										</div>								
+									</div>
+		
+									<div class="w-1/6 flex flex-row items-center justify-between">
+										<p class=" font-semibold text-black text-lg">S/51.20</p>
+		
+										<svg class=" w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+											<path d="M6 2l2-2h4l2 2h4v2H2V2h4zM3 6h14l-1 14H4L3 6zm5 2v10h1V8H8zm3 0v10h1V8h-1z"/>
+										</svg>															
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="w-full flex flex-row">
+							<div class="w-1/2 flex flex-col">
+								<div class="w-full px-2">
+									<p class="font-bold text-sm">Direccion de entrega</p>
+								</div>
+								<div class="w-full h-24 px-2">
+									<div class="w-full h-full flex flex-row items-center border-2 p-2 border-black">
+										<input class="mr-3" type="radio" name="direccion" id="">
+										<label class="mr-3" for="radio">
+											<ul>
+												<li class="text-xs text-red-700">Casa</li>
+												<li class="text-xs text-red-700">Jose Carlos Mareategui 315</li>
+												<li class="text-xs text-red-700">Ref. Paradesros Arica</li>
+												<li class="text-xs text-red-700">Lima, Lima, Lima</li>
+												<li class="text-xs text-red-700">Cel 999999888</li>
+											</ul>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="w-1/2 flex flex-col">
+								<div class="w-full px-2">
+									<p class="font-bold text-sm">Datos de facturacion</p>
+								</div>
+								<div class="w-full h-24 px-2">
+									<ul class="w-full h-full flex flex-col border-2 px-2 border-black justify-center">									
+										<li class="text-xs text-black">Casa</li>
+										<li class="text-xs text-black">Jose Carlos Mareategui 315</li>
+										<li class="text-xs text-black">Ref. Paradesros Arica</li>
+										<li class="text-xs text-black">Lima, Lima, Lima</li>									
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="w-full flex flex-col px-2">
+							<div class="w-full">
+								<p class="font-bold text-sm">Dia y hora de entrega</p>
+							</div>
+							<div class="w-full border-2 border-black p-2">
+								<p>Jueves 10 de Octubre del 2019, a las 10:00 am (10/10/2019 10:00 am)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex w-4/12 px-2">									
+						<div class="w-full flex flex-col bg-white border-2 border-black px-3">
+							<!-- titulo del modal -->
+							<div class="w-full py-2 border-b-2 border-black mb-3">
+								<p class="text-2xl font-semibold">Resumen del pedido</p>
+							</div>
+							<!-- listado de compras -->
+			
+							<ul class="w-full flex flex-col">
+								<li class="w-full flex flex-row justify-between mb-3">
+									<p>Cantidad</p>
+									<p>2 und</p>
+								</li>
+								<li class="w-full flex flex-row justify-between mb-3">
+									<p>Subtotal</p>
+									<p>164.20</p>
+								</li>
+								<li class="w-full flex flex-row justify-between mb-3">
+									<p>Descuento</p>
+									<p class=" font-semibold text-red-600">(45.00)</p>
+								</li>
+							</ul>	
+			
+							<!-- zona de calculo -->				
+							<div class=" w-full flex flex-col border-t-2 border-black py-4">
+								<div class="w-full flex flex-row justify-between mb-3">
+									<p class="font-bold text-lg">Total:</p>
+									<p class="font-semibold text-lg text-red-600">S/ 119.20</p>
+								</div>
+								<button class="w-full p-3 bg-red-600 text-white font-semibold mb-2">Imprimir comprobante</button>						
+							</div>			
+							<!-- zona de calculo end-->	
+						</div>								
+					</div>
+				</div>
+			</div>
+					
+			<div class="w-full  border-2 text-center border-black py-4 px-4 bg-red-700">				
+				<p class="text-2xl text-white">Venta exitosa</p>				
+			</div>
+		</div>
+	</main>
+	<footer class=" bg-indigo-900 text-center text-white font-semibold py-4 absolute bottom-0 w-full">
+		Pie de pagina
+	</footer>
+  </body>
+</html>
