@@ -1,0 +1,26 @@
+<template>
+  <section id="slider" class="w-full relative" style="height: 330px;">
+	  <carousel class="w-full h-full" :autoplay="true" :items=1 :nav="false">
+		<img src="https://placeimg.com/200/200/any?1">
+
+		<img src="https://placeimg.com/200/200/any?2">
+
+		<img src="https://placeimg.com/200/200/any?3">
+
+		<img src="https://placeimg.com/200/200/any?4">
+	  </carousel>
+  </section>
+</template>
+
+<script>
+
+import '../../../assets/css/style.css'
+import carousel from 'vue-owl-carousel';
+
+export default {
+	  name: 'Slider',
+	  components:{
+		  carousel
+	  }
+}
+</script>

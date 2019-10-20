@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
+  <div>
   </div>
 </template>
 
 <script>
 
+import '../../../assets/css/style.css'
+
 export default {
-  name: 'app'
+  	name: 'Home'
 }
 </script>

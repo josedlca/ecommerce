@@ -10,6 +10,7 @@
     "core-js": "^2.6.5",
     "tailwindcss": "^1.1.2",
     "vue": "^2.6.10",
+    "vue-owl-carousel": "^2.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -19,7 +20,7 @@
   },
   "postcss": {
     "plugins": {
-	  "tailwindcss": "./tailwind.config.js",
+      "tailwindcss": "./tailwind.config.js",
       "autoprefixer": {}
     }
   },

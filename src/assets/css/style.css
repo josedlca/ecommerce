@@ -58,3 +58,19 @@
 #newAdressPopup textarea{
 	resize: none;
 }
+
+#slider div,
+#slider img{
+	height: 100%;
+}
+
+.owl-dots{
+	position: absolute;
+	height: auto!important;
+	bottom: 0;
+    width: 100%;
+}
+.owl-dots button,
+.owl-dots button:focus{
+	outline: none;
+}
