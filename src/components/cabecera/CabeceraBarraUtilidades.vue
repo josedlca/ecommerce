@@ -1,16 +1,15 @@
 <template>
-	<section class="w-full h-28" :class="'colorPrimarioUno'">
+	<section class="w-full h-28 relative" :class="'colorPrimarioUno'">
 		<div class="container flex content-center h-full mx-auto">
 			<!-- drop menu icon -->
-			<div class="self-center w-1/12 flex justify-center">
-				<div class="inline-block">
-					<p class="text-white txt-regular font-light mont-regular">Categoria</p>
-					<svg class="mx-auto" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						width="57.333px" height="52.369px" viewBox="0 0 57.333 52.369" enable-background="new 0 0 57.333 52.369" xml:space="preserve">
-						<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="6" y1="10.051" x2="49" y2="10.051"/>
-						<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="6" y1="25.631" x2="49" y2="25.631"/>
-						<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="6" y1="40.587" x2="49" y2="40.587"/>
-					</svg>
+			<div class="self-center w-1/12 flex justify-center h-full">
+				<div class="burguer-btn h-full w-full">
+					<div class="inline-block h-full flex flex-col justify-center w-full items-center">
+						<p class="text-white txt-regular font-light mont-regular">Categoria</p>
+						<svg class="w-12 fill-current text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+					</div>
+
+					<CabeceraBarraNav/>
 				</div>
 			</div>
 
@@ -175,10 +174,13 @@
 <script>
 import '@/assets/css/style.css'
 import logo from '@/assets/img/logo.png'
+import CabeceraBarraNav from '@/components/cabecera/CabeceraBarraNav.vue'
 
 export default {
 	name: 'CabeceraBarraUtilidades',
-
+	components:{
+		CabeceraBarraNav
+	},
 	data(){
 		return{
 			logo: logo
@@ -186,3 +188,23 @@ export default {
 	}
 }
 </script>
+
+<style lang="css">
+	.burguer-btn:hover{
+		background: white;
+		border-radius: 0 0 8px 8px;
+		height: 110%;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	}
+
+	.burguer-btn:hover p{
+		color: #8E4560;
+	}
+
+	.burguer-btn:hover svg{
+		fill: #8E4560;
+	}
+	.burguer-btn:hover > .drop-nav-container{
+		visibility: visible;
+	}
+</style>

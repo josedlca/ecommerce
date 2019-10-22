@@ -18,7 +18,8 @@ module.exports = {
 				'gray-intense': '#4D4D4D',
 				'gray-light' : '#B3B3B3',
 				'gray-regular': '#666666',
-				'gray-superIntense' : '#333333'
+				'gray-superIntense' : '#333333',
+				'red-intense':'#CC0000'
 			},
 			spacing:{
 				'2.5':'0.625rem',
