@@ -14,11 +14,11 @@
 
 <script>
 
-import '../../../assets/css/style.css'
+import '@/assets/css/style.css'
 import carousel from 'vue-owl-carousel';
 
 export default {
-	  name: 'Slider',
+	  name: 'BanerSlider',
 	  components:{
 		  carousel
 	  }

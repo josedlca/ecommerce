@@ -74,3 +74,59 @@
 .owl-dots button:focus{
 	outline: none;
 }
+.searchInp input{
+	background-color: #A1657C;
+}
+.searchInp input::placeholder{
+	color: #E6E6E6;
+}
+
+.searchInp svg{
+	fill: #E6E6E6;
+}
+
+/* utility icons bar */
+.utility-icon{
+	background-color: white;
+}
+
+.icon-text{
+	color: #8E4560;
+}
+
+.delivery-icon-color,
+.user-icon-color,
+.carrito-icon-color{
+	fill: #8E4560;
+}
+
+.utility-icon:hover,
+.buyIcon:hover .utility-icon{
+	background-color: #8E4560;
+}
+
+.utility-icon:hover .delivery-icon-color,
+.utility-icon:hover .user-icon-color,
+.buyIcon:hover .carrito-icon-color{
+	fill: white;
+}
+
+.utility-icon:hover .icon-text{
+	color: white;
+}
+
+/* utility icons bar */
+
+
+/* especial styles */
+.colorPrimarioUno{
+	background-color: #8E4560;
+}
+
+.colorPrimarioDos{
+	background-color: #9B90A3;
+}
+
+.txt-regular{
+	font-size: 15px;
+}
