@@ -5,7 +5,7 @@
 				<div class="mt-2 mb-2 w-48 h-24 mx-auto">
 					<img class="w-full h-full" :src="item.src" :alt="item.name">
 				</div>
-				<p class=" self-center leading-none text-white text-center uppercase tracking-wide text-lg">{{item.name}}</p>
+				<p class=" self-center leading-none text-white text-center uppercase mont-semibold tracking-wide text-lg">{{item.name}}</p>
 			</div>
 		</div>
 	</div>

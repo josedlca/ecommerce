@@ -8,6 +8,7 @@
 			<BanerSlider/>
 			<section class="container mx-auto px-20">
 				<BanerCategorias/>
+				<BarraVerMas/>
 			</section>
 		</main>
 	</div>
@@ -20,13 +21,15 @@ import CabeceraBarraUtilidades from "@/components/cabecera/CabeceraBarraUtilidad
 import CabeceraBarraNav from "@/components/cabecera/CabeceraBarraNav"
 import BanerSlider from "@/components/home/BanerSlider"
 import BanerCategorias from "@/components/home/BanerCategorias"
+import BarraVerMas from "@/components/BarraVerMas"
 
 export default {
 	components:{
 		CabeceraBarraUtilidades,
 		CabeceraBarraNav,
 		BanerSlider,
-		BanerCategorias
+		BanerCategorias,
+		BarraVerMas
 	},
   	name: 'Home'
 }

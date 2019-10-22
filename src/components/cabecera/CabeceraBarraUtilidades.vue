@@ -1,5 +1,5 @@
 <template>
-	<section class="w-full h-24" :class="'colorPrimarioUno'">
+	<section class="w-full h-28" :class="'colorPrimarioUno'">
 		<div class="container flex content-center h-full mx-auto">
 			<!-- drop menu icon -->
 			<div class="self-center w-1/12 flex justify-center">
@@ -15,34 +15,15 @@
 			</div>
 
 			<!-- brand and search bar  -->
-			<div class="w-8/12 self-center flex content-center">
+			<div class="w-7/12 self-center flex content-center">
 
-				<a class="self-center w-4/12" href="#">
-					<svg class="mx-auto" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						width="183px" height="90.667px" viewBox="0 0 183 90.667" enable-background="new 0 0 183 90.667" xml:space="preserve">
-						<rect x="9" y="74.752" fill="none" width="164" height="72.915"/>
-						<text transform="matrix(1 0 0 1 58.2007 81.8521)" fill="#FFFFFF" font-family="'MontserratAlternates-Regular'" font-size="10">Profesional Hair</text>
-						<rect y="10.667" fill="none" width="183" height="64"/>
-						<text transform="matrix(1 0 0 1 9.3398 49.6206)" fill="#FFFFFF" font-family="'BodoniMTPosterCompressed'" font-size="53" letter-spacing="1">Belleza D&amp;C</text>
-						<path fill="#FFFFFF" d="M76.357,62.547h-62.26c0.467-0.519,0.76-1.199,0.76-1.952c0-1.618-1.311-2.929-2.928-2.929
-							C10.311,57.667,9,58.978,9,60.595c0,1.617,1.311,2.928,2.929,2.928h62.26c-0.467,0.519-0.76,1.199-0.76,1.953
-							c0,1.617,1.311,2.929,2.928,2.929c1.618,0,2.929-1.312,2.929-2.929C79.286,63.858,77.975,62.547,76.357,62.547z"/>
-						<path fill="#FFFFFF" d="M105.643,62.547h62.26c-0.467-0.519-0.76-1.199-0.76-1.952c0-1.618,1.311-2.929,2.928-2.929
-							c1.618,0,2.929,1.311,2.929,2.929c0,1.617-1.311,2.928-2.929,2.928h-62.26c0.467,0.519,0.76,1.199,0.76,1.953
-							c0,1.617-1.311,2.929-2.928,2.929c-1.618,0-2.929-1.312-2.929-2.929C102.714,63.858,104.025,62.547,105.643,62.547z"/>
-						<g>
-							<path fill="#FFFFFF" d="M94.486,65.288c0,1.926-1.561,3.486-3.486,3.486s-3.486-1.561-3.486-3.486c0-1.925,2.789-4.881,3.486-4.881
-								S94.486,63.363,94.486,65.288z"/>
-							<path fill="#FFFFFF" d="M88.211,68.774c0,0-2.092-0.697-1.395-4.184c0,0-0.697-2.092-3.486-2.092c0,0-1.395,1.395,0,3.486
-								c0,0-0.697-1.395-2.092-0.697c0,0,1.395,0.697,2.092,2.789S88.211,68.774,88.211,68.774z"/>
-							<path fill="#FFFFFF" d="M93.789,68.774c0,0,2.092-0.697,1.395-4.184c0,0,0.697-2.092,3.486-2.092c0,0,1.395,1.395,0,3.486
-								c0,0,0.697-1.395,2.092-0.697c0,0-1.395,0.697-2.092,2.789S93.789,68.774,93.789,68.774z"/>
-						</g>
-					</svg>
+				<a class="self-center w-4/12 flex flex-col px-2" href="#">
+					<img :src="logo" alt="logo">
+					<p class="text-white text-xs mont-regular text-center">Profesional Hair</p>
 				</a>
 
 				<div class="self-center w-8/12 relative inline-block h-full searchInp pr-2">
-					<input class="w-full outline-none text-lg p-5 rounded-lg border-2 border-white" type="text" placeholder="Buscar Producto..." >
+					<input class="w-full outline-none text-lg p-5 mont-regular rounded-lg border-2 border-white" type="text" placeholder="Buscar Producto..." >
 					<button class="absolute right-0 top-0 px-5 flex h-full focus:outline-none">
 						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							width="33.803px" height="34.603px" viewBox="0 0 33.803 34.603" enable-background="new 0 0 33.803 34.603" xml:space="preserve">
@@ -63,12 +44,12 @@
 			</div>
 
 			<!-- other utilities -->
-			<div class="w-3/12 h-full flex">
+			<div class="w-4/12 h-full flex">
 				<!-- truck -->
 				<div class="inline-block relative w-1/3 h-full flex">
 					<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
 						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-2xl h-full utility-icon relative">
-							<svg class=" w-20 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 26.93">
+							<svg class=" w-20 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 26.93">
 								<title>Recurso 2</title>
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Capa_1-2" data-name="Capa 1">
@@ -79,7 +60,7 @@
 									</g>
 								</g>
 							</svg>
-							<p class="uppercase text-sm icon-text absolute bottom-0 pb-3">Transporte</p>
+							<p class="uppercase text-sm icon-text absolute bottom-0 pb-6 mont-semibold">Transporte</p>
 						</div>
 					</div>
 				</div>
@@ -88,7 +69,7 @@
 				<div class="inline-block relative w-1/3 h-full flex">
 					<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
 						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-2xl h-full utility-icon relative">
-							<svg class="w-12 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.32 49.56">
+							<svg class="w-12 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.32 49.56">
 								<title>Recurso 3</title>
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Capa_1-2" data-name="Capa 1">
@@ -96,7 +77,7 @@
 									</g>
 								</g>
 							</svg>
-							<p class="uppercase text-sm icon-text absolute bottom-0 pb-3">Cuenta</p>
+							<p class="uppercase text-sm icon-text absolute bottom-0 mont-semibold pb-6">Cuenta</p>
 						</div>
 					</div>
 				</div>
@@ -106,7 +87,7 @@
 					<div class="inline-block relative w-full h-full flex">
 						<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
 							<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-2xl h-full utility-icon relative">
-								<svg class="w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.88 47.69">
+								<svg class="w-12 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.88 47.69">
 									<title>Recurso 4</title>
 									<g id="Capa_2" data-name="Capa 2">
 										<g id="Capa_1-2" data-name="Capa 1">
@@ -115,7 +96,7 @@
 									</g>
 								</svg>
 
-								<p class="uppercase text-sm icon-text absolute bottom-0 pb-3">Carrito</p>
+								<p class="uppercase text-sm icon-text absolute bottom-0 mont-semibold pb-6">Carrito</p>
 							</div>
 						</div>
 					</div>
@@ -193,8 +174,15 @@
 
 <script>
 import '@/assets/css/style.css'
+import logo from '@/assets/img/logo.png'
 
 export default {
-	name: 'CabeceraBarraUtilidades'
+	name: 'CabeceraBarraUtilidades',
+
+	data(){
+		return{
+			logo: logo
+		}
+	}
 }
 </script>

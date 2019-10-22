@@ -77,7 +77,6 @@
 	font-family: 'Bebas-regular';
 }
 /* fonts family */
-
 .top-full{
 	top: 100%;
 }
@@ -187,6 +186,10 @@
 
 .utility-icon:hover .icon-text{
 	color: white;
+}
+
+.arrow-icon-color{
+	fill: white;
 }
 
 /* utility icons bar */
