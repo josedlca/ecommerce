@@ -1,8 +1,82 @@
 @tailwind base;
 
+@font-face {
+	font-family: Bod pstc;
+	font-weight: 400;
+	src: url(../Fonts/BOD_PSTC.TTF) format("woff");
+}
+
+@font-face {
+	font-family: Montserrat-regular;
+	font-weight: 400;
+	src: url(../Fonts/Montserrat-Regular_2.ttf) format("woff");
+}
+
+@font-face {
+	font-family: Montserrat-bold;
+	font-weight: 700;
+	src: url(../Fonts/Montserrat-Bold_2.ttf) format("woff");
+}
+
+@font-face {
+	font-family: Montserrat-medium;
+	font-weight: 500;
+	src: url(../Fonts/Montserrat-Medium_2.ttf) format("woff");
+}
+
+@font-face {
+	font-family: Montserrat-semivold;
+	font-weight: 700;
+	src: url(../Fonts/Montserrat-SemiBold_2.ttf) format("woff");
+}
+
+@font-face {
+	font-family: Montserrat-alterno;
+	font-weight: 400;
+	src: url(../Fonts/MontserratAlternates-Regular_0.ttf) format("woff");
+}
+
+@font-face {
+	font-family: Oswald-medium;
+	font-weight: 500;
+	src: url(../Fonts/Oswald-Medium.ttf) format("woff");
+}
+
+@font-face {
+	font-family: Bebas-regular;
+	font-weight: 500;
+	src: url(../Fonts/Bebas-Regular.otf) format("woff");
+}
 @tailwind components;
 
 @tailwind utilities;
+
+/* fonts family */
+.mont-regular{
+	font-family: 'Montserrat-regular';
+}
+.bod-font{
+	font-family: 'Bod pstc';
+}
+.mont-bold{
+	font-family: 'Montserrat-bold';
+}
+.mont-medium{
+	font-family: 'Montserrat-medium';
+}
+.mont-semibold{
+	font-family: 'Montserrat-semivold';
+}
+.mont-alterno{
+	font-family: 'Montserrat-alterno';
+}
+.oswald-medium{
+	font-family: 'Oswald-medium';
+}
+.bebas-regular{
+	font-family: 'Bebas-regular';
+}
+/* fonts family */
 
 .top-full{
 	top: 100%;

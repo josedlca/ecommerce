@@ -4,8 +4,8 @@
 			<!-- drop menu icon -->
 			<div class="self-center w-1/12 flex justify-center">
 				<div class="inline-block">
-					<p class="text-white txt-regular font-light">Categoria</p>
-					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					<p class="text-white txt-regular font-light mont-regular">Categoria</p>
+					<svg class="mx-auto" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="57.333px" height="52.369px" viewBox="0 0 57.333 52.369" enable-background="new 0 0 57.333 52.369" xml:space="preserve">
 						<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="6" y1="10.051" x2="49" y2="10.051"/>
 						<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="6" y1="25.631" x2="49" y2="25.631"/>
