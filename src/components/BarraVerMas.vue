@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full px-1">
+	<div class="w-full px-1 mb-5">
 		<div class="bg-purple-light w-full flex flex-row py-2.5 px-8">
 			<div class="w-3/12 flex items-center">
 				<p class="text-4.5xl bebas-regular text-white uppercase leading-none">Shampoos</p>
