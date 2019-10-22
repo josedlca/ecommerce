@@ -192,6 +192,16 @@
 	fill: white;
 }
 
+.buy-fast .delivery-icon-color{
+	fill: #D4145A;
+}
+
+.facebook-icon,
+.instagram-icon,
+.twitter-icon{
+	fill: #EDD4B6;
+}
+
 /* utility icons bar */
 
 

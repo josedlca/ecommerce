@@ -14,6 +14,7 @@
 				<ProductSlider/>
 			</section>
 		</main>
+		<Footer/>
 	</div>
 </template>
 
@@ -26,6 +27,7 @@ import BanerSlider from "@/components/home/BanerSlider"
 import BanerCategorias from "@/components/home/BanerCategorias"
 import BarraVerMas from "@/components/BarraVerMas"
 import ProductSlider from "@/components/comun/ProductSlider"
+import Footer from "@/components/footer/Footer"
 
 export default {
 	components:{
@@ -34,7 +36,8 @@ export default {
 		BanerSlider,
 		BanerCategorias,
 		BarraVerMas,
-		ProductSlider
+		ProductSlider,
+		Footer
 	},
   	name: 'Home'
 }

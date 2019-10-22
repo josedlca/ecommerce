@@ -5,43 +5,36 @@
 		</div>
 		<img class="w-full h-40" src="https://via.placeholder.com/130" alt="">
 		
-		<p class="text-center text-sm py-1">Shampoo Revlon 200ml <br> - Funcion Repara</p>
+		<p class="text-center text-xs mont-semibold text-gray-intense">Shampoo Revlon 200ml</p>
+		<p class="text-center text-xs mont-regular text-gray-intense mb-1">- Funcion Repara</p>
 		
 		<div class="flex flex-row justify-center">
 			<!-- precio real -->
-			<p class=" line-through mr-2 text-xs text-gray-500">$/64.00</p>
-			<span class="text-xs">-20%</span>
+			<p class=" line-through mr-2 text-xs text-gray-light mont-semibold">S/64.00</p>
+			<span class="text-xs text-gray-light mont-semibold">-20%</span>
 		</div>
-		<div class="flex flex-col mb-1">
+		<div class="flex flex-col items-center mb-1">
 			<!-- precio con descuento -->
-			<div class="w-full flex justify-center">
-				<p class="text-red-600 font-semibold text-xl self-center">$/51.20</p>
+			<div class="w-full flex justify-center mb-1">
+				<p class="text-red-intense mont-semibold text-lg self-center">S/51.20</p>
 			</div>
-			<a class="flex w-full content-center justify-center flex-row"  href="#">
-				<svg class=" w-6 self-center" viewBox="0 0 254.215 254.215">
-					<g>
-						<path d="M253.521,120.354l-19.709-42.577c-1.229-2.652-3.885-4.35-6.807-4.35h-61.982V36.312c0-4.142-3.357-7.5-7.5-7.5H7.5
-							c-4.143,0-7.5,3.358-7.5,7.5v126.221c0,4.142,3.357,7.5,7.5,7.5h14.691c-1.256,2.75-2.205,5.667-2.799,8.712H7.5
-							c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h11.893c3.51,18.016,19.406,31.659,38.436,31.659
-							c19.027,0,34.922-13.644,38.432-31.659h62.596c3.51,18.016,19.405,31.659,38.434,31.659c19.026,0,34.92-13.644,38.43-31.659h10.996
-							c4.143,0,7.5-3.358,7.5-7.5v-62.74C254.215,122.416,253.979,121.341,253.521,120.354z M158.855,178.744H96.26
-							c-0.593-3.045-1.543-5.962-2.799-8.712h64.063c1.988,0,3.791-0.779,5.133-2.042C160.893,171.321,159.598,174.934,158.855,178.744z
-							M15,43.812h135.023v111.221H81.447c-6.571-4.985-14.754-7.95-23.619-7.95s-17.05,2.965-23.621,7.95H15V43.812z M57.828,210.403
-							c-13.324,0-24.164-10.838-24.164-24.159c0-13.323,10.84-24.162,24.164-24.162c13.322,0,24.16,10.839,24.16,24.162
-							C81.988,199.565,71.15,210.403,57.828,210.403z M197.289,210.403c-13.323,0-24.162-10.838-24.162-24.159
-							c0-13.323,10.839-24.162,24.162-24.162c13.321,0,24.158,10.839,24.158,24.162C221.447,199.565,210.61,210.403,197.289,210.403z
-							M239.215,178.744h-3.496c-3.51-18.018-19.402-31.662-38.43-31.662c-13.535,0-25.486,6.904-32.523,17.374
-							c0.162-0.615,0.258-1.257,0.258-1.923V88.427h57.189l17.002,36.729V178.744z"/>
-						<path d="M211.066,95.302h-31.537c-4.143,0-7.5,3.358-7.5,7.5v20.85c0,4.142,3.357,7.5,7.5,7.5h41.428c0.011,0,0.015,0,0.02,0
-							c4.143,0,7.5-3.358,7.5-7.5c0-1.343-0.353-2.603-0.971-3.693l-9.663-20.371C216.601,96.97,213.963,95.302,211.066,95.302z
-							M187.029,116.151v-5.85h19.294l2.774,5.85H187.029z"/>
+			<a class="flex w-1/2 content-center justify-center flex-row buy-fast border border-purple-intense py-1 rounded-xl"  href="#">
+				<svg class=" w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 26.93">
+					<title>Recurso 2</title>
+					<g id="Capa_2" data-name="Capa 2">
+						<g id="Capa_1-2" data-name="Capa 1">
+							<path class="delivery-icon-color" d="M52.58,22.63H26.19c-.06.23-.1.45-.17.67A4.94,4.94,0,0,1,16.41,23c-.06-.29-.16-.37-.44-.37-1.43,0-2.85,0-4.27,0a1,1,0,0,1-1.06-1.41l1.89-6.13a1,1,0,0,1,1-.74,1,1,0,0,1,.89.86,1.55,1.55,0,0,1-.08.56L13,20.24c0,.13-.07.27-.12.45.92,0,1.82,0,2.71,0A1,1,0,0,0,16.78,20,4.78,4.78,0,0,1,21.36,17a4.92,4.92,0,0,1,4.55,3.27.46.46,0,0,0,.53.39h16.2c.33,0,.45-.12.54-.42,1.81-6,3.71-12,5.24-18a2.86,2.86,0,0,0,.06-.31H18.16c-.32,0-.47.09-.53.39a4.52,4.52,0,0,1-.21.62,1,1,0,0,1-1.82-.62c.17-.56.36-1.12.56-1.67A1,1,0,0,1,17,0H49.7a1,1,0,0,1,1,1.27c-.13.56-.28,1.12-.42,1.68,0,0,0,0,0,.08H58a1.29,1.29,0,0,1,1.27.72q2.23,3.91,4.5,7.79a1.41,1.41,0,0,0,.5.5c1.34.8,2.7,1.57,4,2.36a1,1,0,0,1,.55,1.34q-.87,3-1.75,6a1,1,0,0,1-1.17.88H62.44a5,5,0,0,1-2,3.34,4.84,4.84,0,0,1-3.09,1C55,26.88,53.21,25.3,52.58,22.63Zm-7.09-2,.14,0c2.29,0,4.59,0,6.88,0,.1,0,.25-.15.29-.26a5,5,0,0,1,9.41,0,.32.32,0,0,0,.38.26c.85,0,1.69,0,2.54,0,.26,0,.35-.1.41-.33.41-1.44.83-2.88,1.26-4.31a.32.32,0,0,0-.18-.45c-1.22-.69-2.43-1.38-3.63-2.1a2,2,0,0,1-.66-.66Q60.14,9.11,58,5.36A.67.67,0,0,0,57.32,5c-2.33,0-4.67,0-7,0a.52.52,0,0,0-.61.45Q48,11.49,46.31,17.57C46,18.59,45.76,19.62,45.49,20.65Zm12-1.67a3,3,0,1,0,3,3A3,3,0,0,0,57.52,19ZM21.27,19a3,3,0,1,0,3,3A3,3,0,0,0,21.27,19Z"/>
+							<path class="delivery-icon-color" d="M12.61,6.35H1.27C.45,6.35,0,6,0,5.39s.45-1,1.29-1H24a2.32,2.32,0,0,1,.53,0,.94.94,0,0,1,.75,1,1,1,0,0,1-.8.9,4.26,4.26,0,0,1-.5,0Z"/>
+							<path class="delivery-icon-color" d="M19.54,7.83h8.54a2.07,2.07,0,0,1,.5,0,1,1,0,0,1,.07,1.83,1.66,1.66,0,0,1-.49.07H10.85c-.82,0-1.32-.59-1.09-1.27a.93.93,0,0,1,1-.66h8.81Z"/>
+							<path class="delivery-icon-color" d="M13.31,11.53h7.57a1,1,0,0,1,.2,1.92H5.58a1,1,0,0,1-1-1,1,1,0,0,1,1-.94h7.73Z"/>
+						</g>
 					</g>
 				</svg>
-				<span class=" text-xs">Entrega <br> Inmediata</span>
+				<span class=" text-4xs text-gray-regular mont-medium">Entrega <br> Inmediata</span>
 			</a>
 		</div>
 		<div class="block text-center">
-			<button class="inline-block py-1 px-4 bg-gray-400 text-xs font-semibold text-white rounded-lg focus:outline-none">Agregar al carrito</button>
+			<button class="inline-block py-2 px-4 bg-purple-intense text-2xs mont-medium text-white rounded-lg focus:outline-none uppercase">Comprar Ahora</button>
 		</div>
 	</article>
 </template>
