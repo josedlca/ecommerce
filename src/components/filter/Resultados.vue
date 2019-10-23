@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import ProductCard from '@/components/comun/ProductCard'
+
 export default {
 	components:{
 		ProductCard
