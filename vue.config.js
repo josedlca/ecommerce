@@ -7,17 +7,17 @@ module.exports ={
 			],
 			template: 'public/home.html',
 			filename: 'index.html',
-			title: 'Header',
+			title: 'Home',
 			chunks: ['chunk-vendors', 'chunk-common', 'home']
 		},
-		// descripcion:{
-		// 	entry:[
-		// 		'./src/components/pages/header/main.js'
-		// 	],
-		// 	template: 'public/descripcion.html',
-		// 	filename: 'descripcion.html',
-		// 	title: 'Header',
-		// 	chunks: ['chunk-vendors', 'chunk-common', 'descripcion']
-		// }
+		filter:{
+			entry:[
+				'./src/pages/filter/main.js'
+			],
+			template: 'public/filter.html',
+			filename: 'filter.html',
+			title: 'Filter',
+			chunks: ['chunk-vendors', 'chunk-common', 'filter']
+		}
 	}
 }

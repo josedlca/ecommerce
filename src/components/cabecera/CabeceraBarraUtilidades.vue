@@ -5,7 +5,7 @@
 			<div class="self-center w-1/12 flex justify-center h-full">
 				<div class="burguer-btn h-full w-full">
 					<div class="inline-block h-full flex flex-col justify-center w-full items-center">
-						<p class="text-white txt-regular font-light mont-regular">Categoria</p>
+						<p class="text-white txt-regular font-light mont-regular burguerText">Categoria</p>
 						<svg class="w-12 fill-current text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
 					</div>
 
@@ -197,7 +197,7 @@ export default {
 		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 	}
 
-	.burguer-btn:hover p{
+	.burguer-btn:hover .burguerText{
 		color: #8E4560;
 	}
 

@@ -2,8 +2,8 @@
 	<section class="w-full absolute drop-nav-container">
 		<nav class="container mx-auto ">
 			<ul class="flex justify-between">
-				<li class="font-semibold hover:text-red-700 py-3 navItem">
-					<a class="mont-regular text-gray-intense text-xl" href="#">Acondicionadores</a>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Acondicionadores</a>
 
 					<!-- drop nav  -->
 					<div class="w-full bg-white absolute left-0 top-full show-hide-dropnav border border-t-2 border-b-2 z-10">
@@ -11,78 +11,94 @@
 							<div class="sm:flex mb-4 flex-col">
 								<div class="flex w-full mb-4">
 									<div class=" w-1/4">
-										<div class="mb-2 mont-semibold text-xl text-red-intense">Amazonia</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense mx-auto w-2/5"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2 mont-semibold text-xl text-red-intense">Expert</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Loreal</a></li>
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Ver Todo</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Loreal</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Ver Todo</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2 mont-semibold text-xl text-red-intense">Expert</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Loreal</a></li>
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Ver Todo</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Loreal</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Ver Todo</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2 mont-semibold text-xl text-red-intense">Expert</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Loreal</a></li>
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Ver Todo</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Loreal</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Ver Todo</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="flex w-full">
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2 mont-semibold text-xl text-red-intense">Amazonia</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Loreal</a></li>
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Ver Todo</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Loreal</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Ver Todo</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2 mont-semibold text-xl text-red-intense">Expert</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Loreal</a></li>
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Ver Todo</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Loreal</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Ver Todo</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2 mont-semibold text-xl text-red-intense">Expert</div>
-										<ul class="list-reset leading-normal">
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Loreal</a></li>
-											<li style="color: grey!important;"><a href="#">Revlon</a></li>
-											<li style="color: grey!important;"><a href="#">Ver Todo</a></li>
-											<li style="color: black!important;"><a href="#">Ver Todo</a></li>
+										<div class="mb-2 w-full bg-gray-superLight py-3 ">
+											<p class="w-2/5 text-left mx-auto mont-semibold text-xl text-red-intense">Amazonia</p>
+										</div>
+										<ul class="list-reset leading-normal text-center">
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Loreal</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Revlon</a></li>
+											<li class="text-left mx-auto w-2/5 mont-regular text-gray-neutral hover:bg-gray-superLight hover:text-gray-intense"><a href="#">Ver Todo</a></li>
+											<li class="text-left mx-auto w-2/5 text-purple-neutral mont-regular hover:bg-gray-superLight"><a href="#">Ver Todo</a></li>
 										</ul>
 									</div>
 									<div class=" w-1/4">
-										<div class="text-red-600 mb-2"><a class="underline" href="#">Ver Todo</a></div>
+										<div class="w-full mb-2 bg-gray-superLight h-13 flex items-center text-xl">
+											<a class="w-2/5 block text-left mx-auto mont-bold text-purple-neutral border-b-2 border-purple-neutral leading-tight" href="#">Ver Todo</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -90,13 +106,27 @@
 					</div>
 					<!-- drop nav  -->
 				</li>
-				<li class="font-semibold hover:text-red-700 py-3"><a class="mont-regular text-gray-intense text-xl" href="#">Shampoos</a></li>
-				<li class="font-semibold hover:text-red-700 py-3"><a class="mont-regular text-gray-intense text-xl" href="#">Mascarillas</a></li>
-				<li class="font-semibold hover:text-red-700 py-3"><a class="mont-regular text-gray-intense text-xl" href="#">Oil</a></li>
-				<li class="font-semibold hover:text-red-700 py-3"><a class="mont-regular text-gray-intense text-xl" href="#">Serum</a></li>
-				<li class="font-semibold hover:text-red-700 py-3"><a class="mont-regular text-gray-intense text-xl" href="#">Reparadores</a></li>
-				<li class="font-semibold hover:text-red-700 py-3"><a class="mont-regular text-gray-intense text-xl" href="#">Mousse</a></li>
-				<li class="font-semibold hover:text-red-700 py-3 underline"><a class="mont-regular text-gray-intense text-xl" href="#">Ver mas</a></li>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Shampoos</a>
+				</li>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Mascarillas</a>
+				</li>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Oil</a>
+				</li>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Serum</a>
+				</li>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Reparadores</a>
+				</li>
+				<li class="font-semibold py-3 navItem">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Mousse</a>
+				</li>
+				<li class="font-semibold py-3 navItem underline">
+					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Ver mas</a>
+				</li>
 			</ul>
 		</nav>
 	</section>
@@ -116,11 +146,15 @@ export default {
 		transform: translateY(100%);
 		left: 0;
 		visibility: hidden;
-		z-index: 10;
+		z-index: 20;
 		background: white;
 	}
 
 	.drop-nav-container:hover{
 		visibility: visible;
+	}
+
+	.navItem:hover .nav-categories{
+		color: #8E4560;
 	}
 </style>
