@@ -15,7 +15,7 @@ module.exports ={
 				'./src/pages/filter/main.js'
 			],
 			template: 'public/filter.html',
-			filename: 'filter.html',
+			filename: 'filtro.html',
 			title: 'Filter',
 			chunks: ['chunk-vendors', 'chunk-common', 'filter']
 		}

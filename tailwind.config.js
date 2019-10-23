@@ -10,6 +10,7 @@ module.exports = {
 			fontSize:{
 				'4xs': '0.375rem',
 				'2xs': '0.625rem',
+				'2.5xl': '1.65rem',
 				'4.5xl':'2.375rem'
 			},
 			colors:{

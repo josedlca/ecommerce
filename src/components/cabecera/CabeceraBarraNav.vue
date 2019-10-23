@@ -1,13 +1,13 @@
 <template>
 	<section class="w-full absolute drop-nav-container">
-		<nav class="container mx-auto ">
-			<ul class="flex justify-between">
+		<nav class="container mx-auto px-20">
+			<ul class="flex justify-between px-1">
 				<li class="font-semibold py-3 navItem">
 					<a class="mont-regular text-gray-intense text-xl nav-categories" href="#">Acondicionadores</a>
 
 					<!-- drop nav  -->
 					<div class="w-full bg-white absolute left-0 top-full show-hide-dropnav border border-t-2 border-b-2 z-10">
-						<div class="container mx-auto">
+						<div class="container mx-auto px-20">
 							<div class="sm:flex mb-4 flex-col">
 								<div class="flex w-full mb-4">
 									<div class=" w-1/4">
