@@ -8,15 +8,16 @@
 		<main>			
 			<section class="container mx-auto px-20">
 				<BarraProducto/>
-				<div class="w-full flex flex-row px-1">
-					<div class=" w-2/12 mr-2">
-						<div class="w-full bg-white border-2 border-gray-600">
-							<div class="w-full border-b-2 border-gray-600 py-3 px-2">
+				<div class="w-full flex flex-row px-1 mb-14">
+					<!-- filter part -->
+					<div class=" w-3/12 mr-2">
+						<div class="w-full bg-white border-2 border-gray-superLight">
+							<div class="w-full border-b-2 border-gray-superLight py-3 px-2">
 								<p class="bebas-regular text-2.5xl text-purple-light">Filtrar por</p>
 							</div>
 							<!-- categorias -->
-							<div class="w-full border-b-2 border-gray-600 py-3 px-2">
-								<p class="text-purple-neutral text-2xl mont-regular mb-1">Categorias</p>
+							<div class="w-full border-b-2 border-gray-superLight py-3 px-2">
+								<p class="text-purple-neutral text-2xl mont-regular mb-3 border-b-2 border-purple-light pb-3">Categorias</p>
 								<ul>
 									<li class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer">Amazonia</li>
 									<li class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer">Original</li>
@@ -25,7 +26,7 @@
 								</ul>
 							</div>
 							<!-- rango de precio -->
-							<div class="w-full border-b-2 border-gray-600 py-3 px-2">
+							<div class="w-full border-b-2 border-gray-superLight py-3 px-2">
 								<p class="text-purple-neutral text-2xl mont-regular mb-4">Precio</p>
 								<input class="w-full mb-4" type="range" aria-label="rango">
 								<div class="flex flex-row w-full">
@@ -38,7 +39,7 @@
 							</div>
 
 							<div class="w-full py-3 px-2">
-								<p class="text-purple-neutral text-2xl mont-regular mb-4">Marca</p>
+								<p class="text-purple-neutral text-2xl mont-regular mb-4 pb-3 border-b-2 border-purple-light">Marca</p>
 								<ul class="overflow-y-scroll h-32 lista-marcas">
 									<li class="flex items-center">
 										<input type="checkbox" name="Revlon" id="revlon">
@@ -92,76 +93,90 @@
 							</div>
 						</div>
 					</div>
-					<div class=" w-10/12 ml-2">
-						<div class="w-full flex flex-row border-2 border-gray-600 bg-white px-2 py-3 mb-4">
-							<div class="w-1/3 flex">
-								<label class="mr-3">Ordenar:</label>
-								<select class="border focus:outline-none">
-									<option>Novedades</option>
-									<option>Novedades</option>
-									<option>Novedades</option>
-									<option>Novedades</option>
-									<option>Novedades</option>
-								</select>
+					<!-- filter part end-->
+					
+					<!-- show results -->
+					<div class=" w-9/12 ml-2">
+						<div class="w-full flex flex-row bg-gray-superLight px-2 py-3 mb-4">
+							<div class=" w-4/12 flex justify-center items-center">
+								<label class="mr-3 text-purple-neutral text-xs mont-medium">Pagina Por:</label>
+								<div class="comboBox w-2/4 relative border border-purple-neutral h-full bg-white">
+									<select class=" w-full h-full absolute top-0 right-0 focus:outline-none text-gray-regular text-xs mont-medium border-none focus:outline-none 				outline-none px-5">
+										<option>Novedades</option>
+										<option>Novedades</option>
+										<option>Novedades</option>
+										<option>Novedades</option>
+										<option>Novedades</option>
+									</select>
+								</div>
 							</div>
 
-							<div class="w-1/3 flex">
-								<label class="mr-3">Mostrar:</label>
-								<select class="border focus:outline-none">
-									<option>21</option>
-									<option>21</option>
-									<option>21</option>
-									<option>21</option>
-									<option>21</option>
-									<option>21</option>
-									<option>21</option>
-									<option>21</option>
-								</select>
+							<div class="w-4/12 flex justify-center items-center">
+								<label class="mr-3 text-purple-neutral text-xs mont-medium">Mostrar:</label>
+								<div class="comboBox w-3/12 relative border border-purple-neutral h-full bg-white">
+									<select class=" w-full h-full absolute top-0 right-0 focus:outline-none text-gray-regular text-xs mont-medium border-none focus:outline-none 					outline-none px-5">
+										<option>21</option>
+										<option>21</option>
+										<option>21</option>
+										<option>21</option>
+										<option>21</option>
+										<option>21</option>
+										<option>21</option>
+										<option>21</option>
+									</select>
+								</div>
 							</div>
 
-							<div class="w-1/3 flex">
-								<label class="mr-3">Paginas:</label>
-								<select class="border focus:outline-none">
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-								</select>
-								<p class="mx-2"> de 10</p>
-								<div>
-									<button class="border px-3 font-semibold">  </button>
-									<button class="border px-3 font-semibold"> > </button>
+							<div class="w-4/12 flex flex-row justify-center items-center">
+								<label class="mr-3 text-purple-neutral text-xs mont-medium">Paginas:</label>
+								<div class="comboBox w-3/12 relative border border-purple-neutral h-full bg-white">
+									<select class=" w-full h-full absolute top-0 right-0 focus:outline-none text-gray-regular text-xs mont-medium border-none focus:outline-none 				outline-none px-5">
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+									</select>
+								</div>
+								<p class="mx-2 text-purple-neutral text-xs mont-medium"> de 10</p>
+								<div class="flex flex-row">
+									<button class="border px-2 bg-purple-neutral rounded text-white flex items-center"> ⏴ </button>
+									<button class="border px-2 bg-purple-neutral rounded text-white flex items-center"> ⏵ </button>
 								</div>
 							</div>
 						</div>
+
 						<div class="w-full flex flex-row cards flex-wrap">
 							<!-- customizado -->
-							<article class=" w-1/3 mb-4 pr-4">
+							<div class=" w-1/3 mb-4">
 								<ProductCard/>
-							</article>
+							</div>
 							<!-- customizado -->
 						</div>
-						<div class="w-full flex flex-row border-2 justify-center border-gray-600 bg-white px-2 py-3 mb-3">
-							<div class="flex justify-center">
-								<label class="mr-3">Paginas:</label>
-								<select class="border focus:outline-none">
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-									<option>1</option>
-								</select>
-								<p class="mx-2"> de 10</p>
-								<div>
-									<button class="border px-3 font-semibold"> </button>
-									<button class="border px-3 font-semibold"> > </button>
+
+						<div class="w-full flex justify-center flex-row bg-gray-superLight px-2 py-3 mb-4">
+							<div class="w-4/12 flex flex-row justify-center items-center">
+								<label class="mr-3 text-purple-neutral text-xs mont-medium">Paginas:</label>
+								<div class="comboBox w-3/12 relative border border-purple-neutral h-full bg-white">
+									<select class=" w-full h-full absolute top-0 right-0 focus:outline-none text-gray-regular text-xs mont-medium border-none focus:outline-none 				outline-none px-5">
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+									</select>
+								</div>
+								<p class="mx-2 text-purple-neutral text-xs mont-medium"> de 10</p>
+								<div class="flex flex-row">
+									<button class="border px-2 bg-purple-neutral rounded text-white flex items-center"> ⏴ </button>
+									<button class="border px-2 bg-purple-neutral rounded text-white flex items-center"> ⏵ </button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- show results end-->
 				</div>
 			</section>
 		</main>
@@ -224,5 +239,27 @@ export default {
 		color: #8E4560;	
 	}
 
+	/* custom combobox */
+	.comboBox select{
+		background: transparent;
+		z-index: 2;
+	}
+	.comboBox select{
+		-webkit-appearance: button;
+	}
+
+	.comboBox::after{
+		content: '⏷';
+		position: absolute;
+		color: white;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 25px;
+		background: #8E4560;
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+	}
 
 </style>

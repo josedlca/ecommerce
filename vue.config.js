@@ -18,6 +18,15 @@ module.exports ={
 			filename: 'filtro.html',
 			title: 'Filter',
 			chunks: ['chunk-vendors', 'chunk-common', 'filter']
+		},
+		descripcion:{
+			entry:[
+				'./src/pages/descripcion/main.js'
+			],
+			template: 'public/descripcion.html',
+			filename: 'descripcion.html',
+			title: 'Descripcion',
+			chunks: ['chunk-vendors', 'chunk-common', 'descripcion']
 		}
 	}
 }

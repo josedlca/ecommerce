@@ -96,10 +96,6 @@
 	visibility: visible;
 }
 
-.cards article:nth-child(4n){
-	padding-right: 0;
-}
-
 .ventanaProducto li:not(:last-child){
 	border-bottom: 2px solid black;
 }

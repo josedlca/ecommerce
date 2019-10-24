@@ -1,5 +1,5 @@
 <template>
-	<article class=" border rounded h-full mx-2 p-2 relative">
+	<article class=" border-2 border-gray-superLight rounded h-full mx-2 p-2 relative">
 		<div class="absolute text-2xs mont-semibold top-0 right-0 m-2 text-white bg-purple-intense rounded-xl py-1 px-5 uppercase">
 			Oferta
 		</div>
