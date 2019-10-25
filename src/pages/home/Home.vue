@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<header class="full">
+		<header class="w-full">
 			<CabeceraBarraUtilidades/>
 			<!-- <CabeceraBarraNav/> -->
 		</header>

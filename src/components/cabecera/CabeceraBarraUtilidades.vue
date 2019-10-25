@@ -47,7 +47,7 @@
 				<!-- truck -->
 				<div class="inline-block relative w-1/3 h-full flex">
 					<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
-						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-2xl h-full utility-icon relative">
+						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-style h-full utility-icon relative">
 							<svg class=" w-20 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 26.93">
 								<title>Recurso 2</title>
 								<g id="Capa_2" data-name="Capa 2">
@@ -67,7 +67,7 @@
 				<!-- user -->
 				<div class="inline-block relative w-1/3 h-full flex">
 					<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
-						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-2xl h-full utility-icon relative">
+						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-style h-full utility-icon relative">
 							<svg class="w-12 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.32 49.56">
 								<title>Recurso 3</title>
 								<g id="Capa_2" data-name="Capa 2">
@@ -85,7 +85,7 @@
 				<div class="relative buyIcon w-1/3 h-full flex">
 					<div class="inline-block relative w-full h-full flex">
 						<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
-							<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-2xl h-full utility-icon relative">
+							<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-style h-full utility-icon relative">
 								<svg class="w-12 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.88 47.69">
 									<title>Recurso 4</title>
 									<g id="Capa_2" data-name="Capa 2">

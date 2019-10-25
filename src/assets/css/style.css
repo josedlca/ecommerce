@@ -96,10 +96,6 @@
 	visibility: visible;
 }
 
-.ventanaProducto li:not(:last-child){
-	border-bottom: 2px solid black;
-}
-
 .dothOne::after{
 	content: "";
 	width: 100%;
@@ -212,4 +208,12 @@
 
 .txt-regular{
 	font-size: 15px;
+}
+
+.shadow-style{
+	box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.50);
+}
+.cantidad-inp{
+	left: 50%;
+	transform: translateX(-50%);
 }

@@ -27,6 +27,24 @@ module.exports ={
 			filename: 'descripcion.html',
 			title: 'Descripcion',
 			chunks: ['chunk-vendors', 'chunk-common', 'descripcion']
+		},
+		carritocompras:{
+			entry:[
+				'./src/pages/carritocompras/main.js'
+			],
+			template: 'public/ventanaCarrito.html',
+			filename: 'carritocompras.html',
+			title: 'VentanaCarrito',
+			chunks: ['chunk-vendors', 'chunk-common', 'carritocompras']
+		},
+		clienteono:{
+			entry:[
+				'./src/pages/clienteono/main.js'
+			],
+			template: 'public/clienteono.html',
+			filename: 'login.html',
+			title: 'VentanaCarrito',
+			chunks: ['chunk-vendors', 'chunk-common', 'clienteono']
 		}
 	}
 }
