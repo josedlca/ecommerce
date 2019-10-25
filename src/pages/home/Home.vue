@@ -6,7 +6,7 @@
 		</header>
 		<main>			
 			<BanerSlider/>
-			<section class="container mx-auto px-20">
+			<section class="container mx-auto px-3 sm:px-20">
 				<BanerCategorias/>
 				<BarraVerMas/>
 				<ProductSlider/>

@@ -1,5 +1,5 @@
 <template>
-	<section class="w-full absolute drop-nav-container">
+	<section class="w-full absolute drop-nav-container hidden sm:inline-block">
 		<nav class="container mx-auto px-20">
 			<ul class="flex justify-between px-1">
 				<li class="font-semibold py-3 navItem">

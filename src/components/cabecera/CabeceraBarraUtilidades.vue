@@ -1,12 +1,12 @@
 <template>
-	<section class="w-full h-28 relative" :class="'colorPrimarioUno'">
+	<section class="w-full h-20 sm:h-28 relative" :class="'colorPrimarioUno'">
 		<div class="container flex content-center h-full mx-auto">
 			<!-- drop menu icon -->
-			<div class="self-center w-1/12 flex justify-center h-full">
+			<div class="self-center w-2/12 flex justify-center h-full">
 				<div class="burguer-btn h-full w-full">
 					<div class="inline-block h-full flex flex-col justify-center w-full items-center">
-						<p class="text-white txt-regular font-light mont-regular burguerText">Categoria</p>
-						<svg class="w-12 fill-current text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+						<p class="text-white txt-regular font-light mont-regular burguerText hidden sm:inline-block">Categoria</p>
+						<svg class=" w-8 sm:w-12 fill-current text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
 					</div>
 
 					<CabeceraBarraNav/>
@@ -14,17 +14,17 @@
 			</div>
 
 			<!-- brand and search bar  -->
-			<div class="w-7/12 self-center flex content-center">
+			<div class="w-8/12 sm:w-7/12 self-center flex content-center">
 
-				<a class="self-center w-4/12 flex flex-col px-2" href="#">
+				<a class="self-center w-4/12 flex flex-col pr-1 sm:px-2" href="#">
 					<img :src="logo" alt="logo">
-					<p class="text-white text-xs mont-regular text-center">Profesional Hair</p>
+					<p class="text-white text-4xs sm:text-xs mont-regular text-center">Profesional Hair</p>
 				</a>
 
-				<div class="self-center w-8/12 relative inline-block h-full searchInp pr-2">
-					<input class="w-full outline-none text-lg p-5 mont-regular rounded-lg border-2 border-white" type="text" placeholder="Buscar Producto..." >
-					<button class="absolute right-0 top-0 px-5 flex h-full focus:outline-none">
-						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<div class="self-center w-8/12 relative inline-block h-full searchInp sm:pr-2">
+					<input class="w-full outline-none text-xs sm:text-lg px-1 py-2 sm:p-5 mont-regular rounded-lg border sm:border-2 border-white" type="text" placeholder="Buscar Producto..." >
+					<button class="absolute right-0 top-0 px-2 sm:px-5 flex h-full focus:outline-none">
+						<svg class=" w-5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							width="33.803px" height="34.603px" viewBox="0 0 33.803 34.603" enable-background="new 0 0 33.803 34.603" xml:space="preserve">
 							<g>
 								<g>
@@ -43,9 +43,9 @@
 			</div>
 
 			<!-- other utilities -->
-			<div class="w-4/12 h-full flex">
+			<div class="w-2/12 sm:w-4/12 h-full flex">
 				<!-- truck -->
-				<div class="inline-block relative w-1/3 h-full flex">
+				<div class="hidden relative w-1/3 h-full flex sm:inline-block">
 					<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
 						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-style h-full utility-icon relative">
 							<svg class=" w-20 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 26.93">
@@ -65,7 +65,7 @@
 				</div>
 
 				<!-- user -->
-				<div class="inline-block relative w-1/3 h-full flex">
+				<div class="hidden relative w-1/3 h-full flex sm:inline-block">
 					<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
 						<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-style h-full utility-icon relative">
 							<svg class="w-12 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.32 49.56">
@@ -82,11 +82,11 @@
 				</div>
 
 				<!-- shop -->
-				<div class="relative buyIcon w-1/3 h-full flex">
+				<div class="relative buyIcon w-full sm:w-1/3 h-full flex">
 					<div class="inline-block relative w-full h-full flex">
-						<div class="absolute w-full h-full z-10 px-2" style="height: 110%">
-							<div class="w-full flex flex-col items-center justify-center rounded-b-lg shadow-style h-full utility-icon relative">
-								<svg class="w-12 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.88 47.69">
+						<div class="absolute w-full z-10 px-2 h-full sm:h-plus">
+							<div class="w-full flex flex-col items-center justify-center rounded-b-lg sm:shadow-4xl-dark h-full utility-icon relative">
+								<svg class="w-8 sm:mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.88 47.69">
 									<title>Recurso 4</title>
 									<g id="Capa_2" data-name="Capa 2">
 										<g id="Capa_1-2" data-name="Capa 1">
@@ -95,7 +95,7 @@
 									</g>
 								</svg>
 
-								<p class="uppercase text-sm icon-text absolute bottom-0 mont-semibold pb-6">Carrito</p>
+								<p class="hidden sm:inline-block uppercase text-sm icon-text absolute bottom-0 mont-semibold pb-6">Carrito</p>
 							</div>
 						</div>
 					</div>

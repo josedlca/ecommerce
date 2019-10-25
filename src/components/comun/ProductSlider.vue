@@ -1,6 +1,6 @@
 <template>
-  <section class="w-full h-108 relative px-12 cardSlider mb-5">
-	  <carousel class="w-full h-full" :autoplay="false" :dots="false" :items=4 :nav="true">
+  <section class="w-full h-108 relative sm:px-12 cardSlider mb-5">
+	  <carousel class="w-full h-full" :responsive="{0:{items:2,nav:false},640:{items:4,nav:true}}" :autoplay="false" :dots="false" :items=4 :nav="true">
 		<ProductCard v-for="product of products" :key="product.id" />
 	  </carousel>
   </section>

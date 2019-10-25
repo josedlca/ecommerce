@@ -1,7 +1,7 @@
 <template>
 	<footer class="w-full colorPrimarioUno">
-		<div class="container mx-auto flex flex-row px-20 py-3">
-			<div class="w-1/2 flex flex-row">
+		<div class="container mx-auto flex flex-row px-3 sm:px-20 py-3">
+			<div class="w-1/2 hidden sm:flex flex-row">
 				<a class=" pr-5 mr-5 border-r-2 border-white flex flex-col items-center justify-center" href="#">				
 					<img class=" h-16" :src="logo" alt="logo">
 					<p class="text-white text-xs mont-regular text-center">Profesional Hair</p>					
@@ -10,11 +10,11 @@
 					<p class="mont-regular text-white text-sm">Derechos reservados.<br> Belleza D&C 2019</p>
 				</div>
 			</div>
-			<div class="w-1/2 flex items-center">
-				<ul class="flex w-full flex-row justify-end">
-					<li>
+			<div class="w-full sm:w-1/2 flex items-center">
+				<ul class="flex w-full flex-row justify-center sm:justify-end">
+					<li class="mx-3 sm:m-0">
 						<a href="#">
-							<svg class=" w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.47 53.51">
+							<svg class=" w-10 sm:w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.47 53.51">
 								<title>Recurso 12</title>
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Capa_1-2" data-name="Capa 1">
@@ -24,9 +24,9 @@
 							</svg>
 						</a>
 					</li>
-					<li class=" ml-4">
+					<li class=" mx-3 sm:ml-4">
 						<a href="#">
-							<svg class="w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.47 53.46">
+							<svg class="w-10 sm:w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.47 53.46">
 								<title>Capa 6</title>
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Capa_1-2" data-name="Capa 1">
@@ -41,9 +41,9 @@
 							</svg>
 						</a>
 					</li>
-					<li class=" ml-4">
+					<li class=" mx-3 sm:ml-4">
 						<a href="#">
-							<svg class="w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.46 53.48">
+							<svg class="w-10 sm:w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.46 53.48">
 								<title>Recurso 13</title>
 								<g id="Capa_2" data-name="Capa 2">
 									<g id="Capa_1-2" data-name="Capa 1">
@@ -56,8 +56,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="w-full bg-gray-superIntense py-4">
-
+		<div class="w-full flex justify-center bg-gray-superIntense py-4">
+			<p class="text-2xs sm:text-sm text-white mont-regular">Derechos Reservados Belleza D&C 2019.</p>
 		</div>
 	</footer>
 </template>

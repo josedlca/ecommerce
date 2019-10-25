@@ -217,3 +217,17 @@
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+.facebook-icon-btn{
+	fill: white;
+}
+
+@media (max-width: 640px){
+	.utility-icon{
+		background: transparent;
+	}
+	.carrito-icon-color{
+		fill: white;
+	}
+
+}

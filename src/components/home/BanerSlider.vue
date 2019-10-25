@@ -1,5 +1,5 @@
 <template>
-  <section id="slider" class="w-full h-112 relative">
+  <section id="slider" class="w-full h-69 sm:h-112 relative">
 	  <carousel class="w-full h-full" :autoplay="true" :items=1 :nav="false">
 		<img src="https://placeimg.com/200/200/any?1">
 

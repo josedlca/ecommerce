@@ -18,7 +18,7 @@
 			<div class="w-full flex justify-center mb-1">
 				<p class="text-red-intense mont-semibold text-lg self-center">S/51.20</p>
 			</div>
-			<a class="flex w-1/2 content-center justify-center flex-row buy-fast border border-purple-intense py-1 rounded-xl"  href="#">
+			<a class="flex w-4/5 sm:w-1/2 content-center justify-center flex-row buy-fast border border-purple-intense py-1 rounded-xl"  href="#">
 				<svg class=" w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.98 26.93">
 					<title>Recurso 2</title>
 					<g id="Capa_2" data-name="Capa 2">
