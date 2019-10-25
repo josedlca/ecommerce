@@ -11,6 +11,9 @@ module.exports = {
 				'full/2' : '50%',
 				'plus' : '110%'
 			},
+			width:{
+				'auto': 'auto',
+			},
 			fontSize:{
 				'4xs': '0.375rem',
 				'3xs' : '0.500rem',
@@ -43,6 +46,7 @@ module.exports = {
 				'xl':'1rem'
 			},
 			boxShadow:{
+				'3xl-dark' : '0px 0px 10px 0px rgba(0, 0, 0, 0.50)',
 				'4xl-dark':'1px 5px 10px 3px rgba(0, 0, 0, 0.50)'
 			}
 		}
