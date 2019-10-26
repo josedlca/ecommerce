@@ -1,36 +1,37 @@
 <template>
-	<div>
+	<div class="w-full">
 		<header class="w-full">
 			<CabeceraBarraUtilidades/>
 		</header>
 		<BreadCrumbs/>
 		<main>			
-			<section class="container mx-auto px-20">
-				<div class="w-full flex flex-row bg-white items-center mb-5 shadow-style" style="height: 400px;">
-					<div class=" w-6/12 h-full">
+			<section class="container mx-auto sm:px-20">
+				<div class="w-full flex flex-col sm:flex-row bg-white items-center mb-5 sm:shadow-style sm:h-111">
+					<div class="w-full px-3 sm:px-0 sm:w-6/12 h-67 sm:h-full relative">
 						<img class="w-full h-full" src="https://via.placeholder.com/1600" alt="placeholder">
 					</div>
-					<div class=" w-6/12 p-8">
-						<div class="w-full border-b-2 flex flex-col pb-3 mb-3">
-							<p class="mont-semibold text-purple-intense mb-1">Marca : Revlon</p>
+					<div class=" w-full sm:w-6/12 px-3 sm:p-8 border-b border-gray-superLight sm:border-none">
+						<div class="w-full sm:border-b-2 flex flex-col sm:pb-3 sm:mb-3">
+
+							<p class="mont-semibold text-purple-intense mb-1 text-center sm:text-left">Marca : Revlon</p>
 							
-							<div class="w-full flex flex-col mb-4">
-								<h3 class=" text-xl mont-semibold text-gray-intense">Acondicionador 200ml</h3>
-								<p class="text-xl mont-regular text-gray-intense">Para cabello con tinte</p>
+							<div class="w-full flex flex-col mb-1 sm:mb-4">
+								<h3 class=" text-xl mont-semibold text-center sm:text-left text-gray-intense">Acondicionador 200ml</h3>
+								<p class="text-xl mont-regular text-gray-intense text-center sm:text-left">Para cabello con tinte</p>
 							</div>
 
-							<div class="w-full flex flex-row mb-4">
+							<div class="w-full sm:flex flex-row mb-4 hidden">
 								<p class="mont-semibold text-gray-regular text-3xl mr-3">Precio:</p>
 								<p class="mont-semibold text-red-intense text-3xl">S/54.40</p>
 							</div>
 							
-							<div class="flex flex-row mb-3">
+							<div class="sm:flex flex-row mb-3 hidden">
 								<p class="mont-regular text-xs text-gray-intense mr-3">Precio regular:</p> 
 								<span class="text-xs mont-bold text-gray-light mr-3 line-through">S/64.00</span> 
 								<p class="text-xs mont-bold text-white bg-purple-intense rounded">-20%</p>
 							</div>
 							
-							<div class="flex flex-row justify-around items-center">
+							<div class="sm:flex hidden flex-row justify-around items-center">
 								<div class="w-1/3 flex flex-row items-center">
 									<div class="w-full relative flex flex-row border border-purple-intense rounded">
 										<div class="w-1/2">
@@ -49,7 +50,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="w-full flex flex-row items-center justify-around">
+
+						<div class="w-full sm:flex hidden flex-row items-center justify-around">
 							<div class="w-1/4">
 								<p class="text-2xs mont-medium text-gray-regular">Enviado por:</p>
 								<p class="text-2xs mont-medium text-purple-intense">Belleza</p>
