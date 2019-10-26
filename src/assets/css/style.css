@@ -222,12 +222,60 @@
 	fill: white;
 }
 
+#revlon{
+	display: none;
+}
+
+.checkLabel::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 17px;
+	height: 18px;
+	border: solid 1px #8E4560;
+	display: inline-flex;
+	background: transparent;
+	border-radius: 2px;
+	margin-right: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	justify-content: center;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+#revlon:checked + .checkLabel::before{
+	content: '🗸';
+	color: #8E4560;	
+}
+
 @media (max-width: 640px){
 	.utility-icon{
 		background: transparent;
 	}
 	.carrito-icon-color{
 		fill: white;
+	}
+
+	.show-hide-dropnav,
+	.show-hide-buyModal,
+	.show-hide-opacityCap{
+		visibility: hidden;
+		display: none;
+	}
+
+	.navItem:hover .show-hide-dropnav,
+	.buyIcon:hover .show-hide-buyModal,
+	.buyIcon:hover ~ .show-hide-opacityCap{
+		visibility: visible;
+		display: none;
+	}
+
+	.checkLabel::before{
+		left: 100%;
+		transform: translateX(-103%);
+		top: 0;
 	}
 
 }

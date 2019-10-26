@@ -84,7 +84,7 @@
 				<!-- shop -->
 				<div class="relative buyIcon w-full sm:w-1/3 h-full flex">
 					<div class="inline-block relative w-full h-full flex">
-						<div class="absolute w-full z-10 px-2 h-full sm:h-plus">
+						<div class="absolute w-full sm:z-10 px-2 h-full sm:h-plus">
 							<div class="w-full flex flex-col items-center justify-center rounded-b-lg sm:shadow-4xl-dark h-full utility-icon relative">
 								<svg class="w-8 sm:mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.88 47.69">
 									<title>Recurso 4</title>
@@ -206,5 +206,17 @@ export default {
 	}
 	.burguer-btn:hover > .drop-nav-container{
 		visibility: visible;
+	}
+
+	@media (max-width: 640px){
+		.burguer-btn:hover{
+			background: transparent;
+			border-radius: none;
+			height: 100%;
+			box-shadow: none;
+		}
+		.burguer-btn:hover svg{
+			fill: #ffffff;
+		}
 	}
 </style>

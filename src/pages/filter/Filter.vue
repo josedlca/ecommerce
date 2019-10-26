@@ -1,23 +1,44 @@
 <template>
-	<div>
+	<div class="relative">
 		<header class="w-full">
 			<CabeceraBarraUtilidades/>
 			<!-- <CabeceraBarraNav/> -->
 		</header>
+		<div @click="mostrarFiltros" class=" w-full flex flex-row px-4 py-1 justify-end shadow-small-bottom mb-6">
+			<p class="uppercase text-purple-neutral bebas-regular text-3xl">Filtros</p>
+			
+			<svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.05 28.2">
+				<title>conosvg</title>
+				<g id="Capa_2" data-name="Capa 2">
+					<g id="Filtro">
+						<path class=" fill-current text-purple-neutral" d="M16.52,0H30.35a2.52,2.52,0,0,1,2.21,1,2.3,2.3,0,0,1-.28,3.12c-2.65,3.1-5.32,6.19-8,9.28a20,20,0,0,1-1.7,2,4.17,4.17,0,0,0-1.41,3.87c.11,1,0,2,0,2.93a1.45,1.45,0,0,1-.72,1.4c-2.21,1.46-4.4,3-6.64,4.39a2,2,0,0,1-1.37.21c-.6-.14-.66-.74-.66-1.3,0-3.05,0-6.1,0-9.14a2.19,2.19,0,0,0-.47-1.26Q6.14,10.32.86,4.23A2.42,2.42,0,0,1,.23,1.41,2.55,2.55,0,0,1,2.85,0C7.41,0,12,0,16.52,0Zm-2.4,25c1.54-1,2.92-1.92,4.25-2.87a1.43,1.43,0,0,0,.52-1c.06-1.46,0-2.91.05-4.36a2.06,2.06,0,0,1,.43-1.2c3-3.56,6.07-7.09,9.11-10.63L30.65,2.4H2.41c.27.33.45.56.65.79Q8.28,9.27,13.5,15.33a2.37,2.37,0,0,1,.63,1.73C14.1,19.63,14.12,22.19,14.12,25Z"/>
+					</g>
+				</g>
+			</svg>
+		</div>
 		<BreadCrumbs/>
 		<main>			
 			<section class="container mx-auto px-3 sm:px-20">
 				<BarraProducto class="hidden sm:inline-block"/>
 				<div class="w-full flex flex-row px-1 mb-5 sm:mb-14">
 					<!-- filter part -->
-					<div class=" w-3/12 mr-2 hidden sm:inline-block">
+					<div :class="showOrHide" class="bg-white sm:bg-transparent sm:relative sm:z-0 sm:w-3/12 sm:h-auto sm:mr-2">
 						<div class="w-full bg-white border-2 border-gray-superLight">
-							<div class="w-full border-b-2 border-gray-superLight py-3 px-2">
+							<div class="w-full border-b-2 border-gray-superLight py-3 px-2 hidden sm:inline-block">
 								<p class="bebas-regular text-2.5xl text-purple-light">Filtrar por</p>
+							</div>
+
+							<!-- responsive tittle -->
+							<div class=" w-full flex flex-row justify-between px-4 py-1 justify-end shadow-small-bottom mb-1 sm:hidden">
+								<p class="uppercase text-purple-neutral bebas-regular text-3xl">Filtros</p>
+
+								<svg @click="ocultarFiltros" class="w-8 fill-current text-purple-neutral" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+									<path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+								</svg>
 							</div>
 							<!-- categorias -->
 							<div class="w-full border-b-2 border-gray-superLight py-3 px-2">
-								<p class="text-purple-neutral text-2xl mont-regular mb-3 border-b-2 border-purple-light pb-3">Categorias</p>
+								<p class="text-purple-neutral text-2xl mont-regular mb-3 border-b sm:border-b-2 border-purple-light pb-3">Categorias</p>
 								<ul>
 									<li class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer">Amazonia</li>
 									<li class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer">Original</li>
@@ -28,69 +49,46 @@
 							<!-- rango de precio -->
 							<div class="w-full border-b-2 border-gray-superLight py-3 px-2">
 								<p class="text-purple-neutral text-2xl mont-regular mb-4">Precio</p>
-								<input class="w-full mb-4" type="range" aria-label="rango">
+								
+								<input class="w-full mb-4 hidden sm:inline-block" type="range" aria-label="rango">
+								
 								<div class="flex flex-row w-full">
-									<input class=" w-2/5 outline-none border-2 border-purple-neutral rounded text-xl text-gray-neutral mont-regular text-center" type="text" aria-label="Valor Inicial">
-									<div class="w-1/5 flex items-center">
+									<div class="w-2/5 flex flex-col">
+										<p class="mont-regular text-gray-neutral">Desde</p>
+										<input class="w-full outline-none border-2 border-purple-neutral rounded text-xl text-gray-neutral mont-regular text-center" type="text" aria-label="Valor Inicial">
+									</div>
+									<div class="w-1/5 flex items-center mt-5">
 										<div class="border-2 w-6 border-purple-neutral rounded mx-auto"></div>
 									</div> 
-									<input class=" w-2/5 outline-none border-2 border-purple-neutral rounded text-xl text-gray-neutral mont-regular text-center" type="text" aria-label="Valor Final">
+									<div class=" w-2/5 flex flex-col">
+										<p class="mont-regular text-gray-neutral">Hasta</p>
+										<input class="w-full outline-none border-2 border-purple-neutral rounded text-xl text-gray-neutral mont-regular text-center" type="text" aria-label="Valor Final">
+									</div>
 								</div>
 							</div>
 
 							<div class="w-full py-3 px-2">
-								<p class="text-purple-neutral text-2xl mont-regular mb-4 pb-3 border-b-2 border-purple-light">Marca</p>
+								<p class="text-purple-neutral text-2xl mont-regular sm:mb-4 pb-3 sm:border-b-2 sm:border-purple-light">Marca</p>
 								<ul class="overflow-y-scroll h-32 lista-marcas">
-									<li class="flex items-center">
+									<li class="w-full flex items-center relative py-1">
 										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
+										<label class="hover:text-gray-intense w-full cursor-pointer relative checkLabel flex flex-row" for="revlon">
+											<p class="mont-regular text-gray-neutral sm:ml-5">Revlon</p>
+											<p class="mont-semibold text-purple-neutral absolute sm:relative sm:hidden top-0 right-0 mr-6">15</p>
+										</label> 
 									</li>
-									<li>
+									<li class="w-full flex items-center relative py-1">
 										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label>  
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label>  
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label>  
-									</li>
-									<li>
-										<input type="checkbox" name="Revlon" id="revlon">
-										<label class="mont-regular text-gray-neutral hover:text-gray-intense cursor-pointer checkLabel" for="revlon">Revlon</label> 
+										<label class="hover:text-gray-intense w-full cursor-pointer relative checkLabel flex flex-row" for="revlon">
+											<p class="mont-regular text-gray-neutral sm:ml-5">Revlon</p>
+											<p class="mont-semibold text-purple-neutral absolute sm:relative sm:hidden top-0 right-0 mr-6">15</p>
+										</label> 
 									</li>
 								</ul>
 							</div>
+						</div>
+						<div class="w-full py-2 bg-purple-neutral text-center sm:hidden">
+							<p class="text-white bebas-regular uppercase text-2xl">Limpiar filtro</p>
 						</div>
 					</div>
 					<!-- filter part end-->
@@ -299,7 +297,24 @@ export default {
 		BarraProducto,
 		Footer
 	},
-  	name: 'Filter'
+	  name: 'Filter',
+	data(){
+		return{
+			showOrHide:'hide-mobile-filter'
+		}
+	},
+	methods: {
+		mostrarFiltros(){
+			if (this.showOrHide == 'hide-mobile-filter') {
+				this.showOrHide='show-mobile-filter'
+			}
+		},
+		ocultarFiltros(){
+			if(this.showOrHide == 'show-mobile-filter'){
+				this.showOrHide = 'hide-mobile-filter'
+			}
+		}
+	},
 }
 </script>
 
@@ -314,28 +329,6 @@ export default {
 		background: #8E4560;
 	}
 
-	#revlon{
-		display: none;
-	}
-
-	.checkLabel::before{
-		content: '';
-		width: 17px;
-		height: 18px;
-		border: solid 1px #8E4560;
-		display: inline-flex;
-		background: transparent;
-		border-radius: 2px;
-		margin-right: 4px;
-		font-size: 14px;
-		font-weight: bold;
-		justify-content: center;
-	}
-
-	#revlon:checked + .checkLabel::before{
-		content: '🗸';
-		color: #8E4560;	
-	}
 
 	/* custom combobox */
 	.comboBox select{
@@ -360,4 +353,22 @@ export default {
     	align-items: center;
 	}
 
+	.hide-mobile-filter{
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		z-index: 20;
+		top: 0;
+		left: -100%;
+		transition: ease-in all .2s
+	}
+	.show-mobile-filter{
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		z-index: 20;
+		top: 0;
+		left: 0;
+		transition: ease-in all .2s
+	}
 </style>
