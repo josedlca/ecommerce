@@ -16,6 +16,7 @@ module.exports = {
 			},
 			width:{
 				'auto': 'auto',
+				'almost-full': '90%'
 			},
 			fontSize:{
 				'4xs': '0.375rem',
