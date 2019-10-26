@@ -1,18 +1,33 @@
 <template>
 	<div>
 		<header class="w-full">
-			<CabeceraBarraUtilidades/>
+			<CabeceraBarraUtilidades class="hidden sm:inline-block"/>
+			<section class="w-full h-20 sm:h-28 relative sm:hidden" :class="'colorPrimarioUno'">
+				<div class="container flex content-center h-full mx-auto">
+					<!-- brand and search bar  -->
+					<div class="w-full sm:w-7/12 self-center flex content-center">
+						<a class="self-center w-5/12 flex flex-col px-3 sm:px-2" href="#">
+							<img :src="logo" alt="logo">
+							<p class="text-white text-4xs sm:text-xs mont-regular text-center">Profesional Hair</p>
+						</a>
+					</div>
+				</div>
+			</section>
 		</header>
-		<main class="w-full">			
-			<div class="container mx-auto py-6 w-full flex flex-row justify-around">
-				<div class="w-4/12">
-					<div class="w-full flex flex-col shadow-style bg-white py-4 px-8">
+		<main class="w-full">	
+			<div class="w-10/12 mx-auto pt-3 sm:hidden">
+				<button @click="showLoginHideSign" :class="estaActivoLogin" class="w-1/2 text-lg focus:outline-none text-center uppercase mont-regular text-gray-light border-b-4 border-gray-light leading-none">Iniciar sesión</button>
+				<button @click="showSignHideLogin" :class="estaActivoSign" class="w-1/2 text-lg focus:outline-none text-center uppercase mont-regular text-gray-light border-b-4 border-gray-light leading-none">Crear cuenta</button>
+			</div>		
+			<div class="container relative mx-auto py-6 w-full flex flex-row justify-around">
+				<div :class="showOrHideLogin" class="w-full absolute sm:relative mt-6 px-4 sm:w-4/12">
+					<div class="w-full flex flex-col shadow-4xl-dark bg-white py-4 px-8">
 						<div class="w-full pb-3">
 							<p class="mont-semibold text-xl text-gray-regular">Soy cliente</p>
 						</div>
 
 						<div class="w-full mb-3">
-							<p class=" text-sm mont-regular text-gray-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repudiandae voluptatem in blanditiis eum, dolorum, voluptate autem inventore ducimus quod corrupti. Recusandae ullam doloribus expedita architecto, consequuntur atque illum dolore?</p>
+							<p class=" text-sm mont-regular text-gray-regular">Si haz comprado antes, solo ingresa tu correo electronico y contraseña para acceder a tu cuenta.</p>
 						</div>
 
 						<div class="w-full flex flex-col mb-3">
@@ -20,7 +35,7 @@
 							<input id="logCorreo" class="w-full border rounded border-purple-neutral text-sm mont-medium text-gray-light px-2 py-1 outline-none" type="email" placeholder="Escribir aqui...">
 						</div>
 
-						<div class="w-full flex flex-col">
+						<div class="w-full flex flex-col mb-1">
 							<label for="logPass" class="mont-medium text-gray-regular">Contraseña*</label>
 							<div class="w-full flex flex-row items-center">
 								<div class="w-10/12">
@@ -43,8 +58,8 @@
 						</div>
 						
 						<div class="w-full flex flex-row mb-3">
-							<p class="mont-medium text-xs text-gray-regular mr-2">¿Has olvidado tu contraseña?</p>
-							<a class="mont-semibold text-xs text-purple-neutral" href="#">Has click aqui</a>
+							<p class="mont-medium text-2xs sm:text-xs text-gray-regular mr-2">¿Has olvidado tu contraseña?</p>
+							<a class="mont-semibold text-2xs sm:text-xs text-purple-neutral" href="#">Has click aqui</a>
 						</div>
 
 						<div class="w-full flex flex-col mb-3">
@@ -89,14 +104,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="w-4/12">
-					<div class="w-full flex flex-col py-4 px-8 shadow-style bg-white">
+				<div :class="showOrHideSign" class="w-full absolute sm:relative mt-6 px-4 sm:w-4/12">
+					<div class="w-full flex flex-col py-4 px-8 shadow-4xl-dark bg-white">
 						<div class="w-full pb-3">
 							<p class="mont-semibold text-xl text-gray-regular">Aun no soy cliente</p>
 						</div>
 
 						<div class="w-full mb-3">
-							<p class="text-sm mont-regular text-gray-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repudiandae voluptatem in blanditiis eum, dolorum, voluptate autem inventore ducimus quod corrupti. Recusandae ullam doloribus expedita architecto, consequuntur atque illum dolore?</p>
+							<p class="text-sm mont-regular text-gray-regular">Si aun no eres cliente, registrate ingresando tu correo electronico, documento de identidad y contraseña</p>
 						</div>
 
 						<div class="w-full flex flex-col mb-3">
@@ -163,13 +178,14 @@
 				</div>
 			</div>
 		</main>
-		<Footer/>
+		<Footer class="hidden sm:inline-block"/>
 	</div>
 </template>
 
 <script>
 
 import '@/assets/css/style.css'
+import logo from '@/assets/img/logo.png'
 import CabeceraBarraUtilidades from "@/components/cabecera/CabeceraBarraUtilidades"
 import Footer from "@/components/footer/Footer"
 
@@ -182,7 +198,12 @@ export default {
 	  data(){
 		  return{
 				mostrar: true,
-				inputType: 'password'
+				inputType: 'password',
+				logo:logo,
+				showOrHideLogin: 'show-login',
+				showOrHideSign: 'hide-sign',
+				estaActivoLogin:'activeChoice',
+				estaActivoSign: ''
 		  }
 	  },
 	  methods: {
@@ -194,7 +215,59 @@ export default {
 				  this.mostrar=true,
 				  this.inputType= 'password'
 			  }
+		  },
+		  showLoginHideSign(){
+			  if (this.showOrHideLogin == 'hide-login') {
+				  this.showOrHideLogin = 'show-login',
+				  this.showOrHideSign = 'hide-sign',
+				  this.estaActivoLogin = 'activeChoice',
+				  this.estaActivoSign = 'unactiveChoice'
+			  }
+		  },
+		  showSignHideLogin(){
+			  if (this.showOrHideSign == 'hide-sign') {
+				  this.showOrHideSign = 'show-sign',
+				  this.showOrHideLogin = 'hide-login',
+				  this.estaActivoLogin = 'unactiveChoice',
+				  this.estaActivoSign = 'activeChoice'
+			  }
 		  }
 	  },
 }
 </script>
+
+<style lang="css">
+
+@media (max-width: 640px){
+	.show-login{
+		top: 0;
+		left: 0;
+		transition: ease-in all .2s;
+	}
+	.hide-login{
+		top: 0;
+		left: -100%;
+		transition: ease-in all .2s;
+	}
+
+	.show-sign{
+		top: 0;
+		right: 0;
+		transition: ease-in all .2s;
+	}
+	.hide-sign{
+		top: 0;
+		right: -100%;
+		transition: ease-in all .2s;
+	}
+
+	.activeChoice{
+		color: #D4145A;
+		border-color: #D4145A;
+	}
+	.unactiveChoice{
+		color: #B3B3B3;
+		border-color: #B3B3B3;
+	}
+}
+</style>
