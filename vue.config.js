@@ -46,8 +46,5 @@ module.exports ={
 			title: 'VentanaCarrito',
 			chunks: ['chunk-vendors', 'chunk-common', 'clienteono']
 		}
-	},
-	publicPath: process.env.NODE_ENV === 'production'
-		? '/ecommerce.github.io/'
-		: '/'
+	}
 }
