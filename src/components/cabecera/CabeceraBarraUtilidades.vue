@@ -13,39 +13,7 @@
 				</div>
 			</div>
 
-<<<<<<< HEAD
-      <!-- brand and search bar  -->
-      <div class="w-8/12 sm:w-7/12 self-center flex content-center">
-        <a class="self-center w-4/12 flex flex-col pr-1 sm:px-2" href="#">
-          <img :src="logo" alt="logo"/>
-          <p class="text-white text-4xs sm:text-xs mont-regular text-center">
-            Profesional Hair
-          </p>
-        </a>
 
-        <div class="self-center w-8/12 relative inline-block h-full searchInp sm:pr-2">
-          <input class="w-full outline-none text-xs sm:text-lg px-1 py-2 sm:p-5 mont-regular rounded-lg border sm:border-2 border-white" type="text" placeholder="Buscar Producto...">
-          <button class="absolute right-0 top-0 px-2 sm:px-5 flex h-full focus:outline-none">
-            <svg
-              id="Capa_1"
-              class=" w-5"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="33.803px"
-              height="34.603px"
-              viewBox="0 0 33.803 34.603"
-              enable-background="new 0 0 33.803 34.603"
-              xml:space="preserve"
-            >
-              <g>
-                <g>
-                  <path
-                    fill="#E6E6E6"
-                    d="M21.998,22.37c-5.17,4.965-13.415,4.799-18.381-0.372c-4.965-5.17-4.798-13.416,0.371-18.381
-=======
 			<!-- brand and search bar  -->
 			<div class="w-8/12 sm:w-7/12 self-center flex content-center">
 
@@ -62,7 +30,6 @@
 							<g>
 								<g>
 									<path fill="#E6E6E6" d="M21.998,22.37c-5.17,4.965-13.415,4.799-18.381-0.372c-4.965-5.17-4.798-13.416,0.371-18.381
->>>>>>> parent of 787aa55... formarting code
 									C9.159-1.348,17.404-1.181,22.37,3.989C27.336,9.159,27.169,17.405,21.998,22.37z M5.375,5.06C1,9.261,0.859,16.238,5.061,20.613
 									c4.2,4.375,11.178,4.516,15.553,0.314c4.375-4.201,4.516-11.178,0.314-15.553C16.726,1,9.749,0.858,5.375,5.06z"/>
 								</g>
