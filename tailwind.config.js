@@ -55,7 +55,8 @@ module.exports = {
 				'4xl-dark':'1px 5px 10px 3px rgba(0, 0, 0, 0.50)'
 			},
 			inset:{
-				'full': '100%'
+				'full': '100%',
+				'less-full': '-100%'
 			}
 		}
 	},
