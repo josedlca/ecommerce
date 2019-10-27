@@ -168,6 +168,44 @@
 				</div>
 			</div>
 		</div>
+		<div class="absolute w-full h-screen top-full z-10 left-0 bg-black opacity-50 sm:hidden"></div>
+		<div class="absolute w-10/12 h-screen bg-white top-full z-20 left-0 sm:hidden">
+			
+			<div class="w-full px-1">
+				<div class="w-full flex flex-row py-2 items-center border-b border-purple-neutral">
+					<svg class="w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.54 35.13">
+						<title>user</title>
+						<g id="Capa_2" data-name="Capa 2">
+							<g id="Menus">
+								<path class="fill-current text-purple-neutral" d="M33.49,33.79a48.68,48.68,0,0,0-1.65-5.91,15.6,15.6,0,0,0-7.55-8.37,20.68,20.68,0,0,0,1.92-3.16,19.59,19.59,0,0,0,1.15-4.26,10.48,10.48,0,0,0-4.77-10.6,12,12,0,0,0-12.49.56C5.78,5.26,5.26,11.33,7,15.75H7v0l.21.5a2.16,2.16,0,0,0,.19.31,10.34,10.34,0,0,0,1.13,1.93l.66,1.06A16.32,16.32,0,0,0,2.1,26.93c-.27.54-1,2.26-1.15,2.62a40.48,40.48,0,0,0-.9,4.07c-.11.64-.11,1.44.82,1.5s.93-.66,1-1.36A17.21,17.21,0,0,1,6.73,23.67c5.07,4,6.49,4.08,10.05.45,3.37,3.64,5.15,3.57,10.07-.5a17.34,17.34,0,0,1,4.81,10.23c.07.68.16,1.3,1,1.28s1-.69.86-1.34M8.37,22.42c1.69-1.49,2.06-1.53,3.87-.54a12.36,12.36,0,0,0,1.34.59c.46.17.93.31,1.39.46-1.16,2.71-4,2.5-6.6-.51m1.85-4.72h0a11.19,11.19,0,0,1-1.85-3.85c-.83-3.58-.68-7,2.2-9.71,2.72-2.53,6-2.81,9.45-1.74,4.12,1.3,6.3,5.57,5.36,10.38a14.68,14.68,0,0,1-2.83,5.82c-3.95,3.73-9,3.35-12.34-.9m8.36,5.4a19.39,19.39,0,0,1,3.91-1.86c.81-.19,1.83.51,2.83.83-2.39,3.36-5.2,3.67-6.74,1"/>
+							</g>
+						</g>
+					</svg>
+
+					<p class="mont-regular text-purple-neutral text-2xl uppercase">mi cuenta</p>
+				</div>
+			</div>
+
+			<div class="w-full px-1">
+				<div class="w-full flex flex-row py-2 items-center border-b border-purple-neutral">
+					<svg class="w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+						<title>categorias icon</title>
+						<g id="Capa_2" data-name="Capa 2">
+							<g id="Menus">
+								<g id="Capa_9" data-name="Capa 9">
+									<rect class="fill-current text-purple-neutral" width="18" height="18" rx="5"/>
+									<rect class="fill-current text-purple-neutral" x="20" width="18" height="18" rx="5"/>
+									<rect class="fill-current text-purple-neutral" y="20" width="18" height="18" rx="5"/>
+									<path class="fill-current text-purple-neutral" d="M38,32.5A5.5,5.5,0,0,1,32.5,38h-8A5.5,5.5,0,0,1,19,32.5v-8A5.5,5.5,0,0,1,24.5,19h8A5.5,5.5,0,0,1,38,24.5Zm-1-8A4.49,4.49,0,0,0,32.5,20h-8A4.49,4.49,0,0,0,20,24.5v8A4.49,4.49,0,0,0,24.5,37h8A4.49,4.49,0,0,0,37,32.5Z"/>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<p class="mont-regular text-purple-neutral text-2xl uppercase">categorias</p>
+				</div>
+			</div>
+		
+		</div>
 	</section>
 </template>
 

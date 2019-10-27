@@ -53,6 +53,9 @@ module.exports = {
 				'small-bottom': '0px 3px 4px 0px rgba(0, 0, 0, 0.4)',
 				'3xl-dark' : '0px 0px 10px 0px rgba(0, 0, 0, 0.50)',
 				'4xl-dark':'1px 5px 10px 3px rgba(0, 0, 0, 0.50)'
+			},
+			inset:{
+				'full': '100%'
 			}
 		}
 	},

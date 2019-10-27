@@ -1,11 +1,11 @@
 <template>
-	<div class="w-full flex justify-between my-4 sm:h-34 ">
-		<div v-for="item of categories" :key="item.id" class="flex w-1/4 h-full px-1">
+	<div class="w-full flex justify-between flex-row flex-wrap sm:flex-no-wrap  my-4 sm:h-34 ">
+		<div v-for="item of categories" :key="item.id" class="flex w-1/2 mb-2 sm:mb-0 sm:w-1/4 h-full px-1">
 			<div class="w-full h-full" :class="'colorPrimarioDos'">
-				<div class="mt-2 mb-2 sm:w-48 h-14 sm:h-24 mx-auto">
+				<div class="mt-2 sm:mb-2 sm:w-48 h-20 sm:h-24 mx-auto">
 					<img class="w-full h-full" :src="item.src" :alt="item.name">
 				</div>
-				<p class=" self-center leading-none text-white text-center uppercase mont-medium sm:mont-semibold sm:tracking-wide text-3xs sm:text-lg">{{item.name}}</p>
+				<p class=" self-center py-2 sm:py-0 leading-none text-white text-center uppercase mont-medium sm:mont-semibold sm:tracking-wide text-3xs sm:text-lg">{{item.name}}</p>
 			</div>
 		</div>
 	</div>

@@ -77,13 +77,6 @@
 	font-family: 'Bebas-regular';
 }
 /* fonts family */
-.top-full{
-	top: 100%;
-}
-.bottom-full{
-	bottom: 100%;
-}
-
 .show-hide-dropnav,
 .show-hide-buyModal,
 .show-hide-opacityCap{
