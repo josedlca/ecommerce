@@ -3,10 +3,13 @@
 		<div class="container flex content-center h-full mx-auto">
 			<!-- drop menu icon -->
 			<div class="self-center w-2/12 flex justify-center h-full">
-				<div @click="showPrincipalMenu" class="burguer-btn h-full w-full">
+				<div class="burguer-btn h-full w-full">
 					<div class="inline-block h-full flex flex-col justify-center w-full items-center">
 						<p class="text-white txt-regular font-light mont-regular burguerText hidden sm:inline-block">Categoria</p>
-						<svg class=" w-8 sm:w-12 fill-current text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+						<svg @click="showPrincipalMenu" :class="[showOrNot?'hidden':'inline-block']" class=" w-10 sm:w-12 fill-current text-white mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+						</svg>
+
+						<svg @click="showPrincipalMenu" :class="[showOrNot?'inline-block':'hidden']" class="w-10 fill-current text-white sm:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
 					</div>
 
 					<CabeceraBarraNav/>
@@ -175,8 +178,8 @@
 		<!-- base opaca end-->
 
 		<!-- nav principal mobile -->
-		<div :class="[showOrNot?'left-0':'left-less-full', showOrNot?'z-20':'z-0', 'swipe-transition']" class="absolute w-10/12 h-screen bg-white top-full sm:hidden">
-			<div class="w-full px-2">
+		<div :class="[showOrNot?'left-0':'left-less-full','swipe-transition']" class="absolute w-10/12 h-screen bg-white top-full sm:hidden z-20">
+			<div @click="subnavCuenta" class="w-full px-2">
 				<div class="w-full flex flex-row py-2 items-center border-b border-purple-neutral">
 					<svg class="w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.54 35.13">
 						<title>user</title>
@@ -191,7 +194,7 @@
 				</div>
 			</div>
 
-			<div class="w-full px-2">
+			<div @click="subnavCategorias" class="w-full px-2">
 				<div class="w-full flex flex-row py-2 items-center border-b border-purple-neutral">
 					<svg class="w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
 						<title>categorias icon</title>
@@ -213,9 +216,9 @@
 		<!-- nav principal mobile end-->
 
 		<!-- nav cuenta -->
-		<div class="absolute w-10/12 h-screen bg-white top-full  left-0 sm:hidden">
+		<div :class="[showOrNotSubnavCuenta?'left-0':'left-less-full','swipe-transition']" class="absolute w-10/12 h-screen bg-white z-30 top-full sm:hidden">
 			<!-- sub nav tittle -->
-			<div class="w-full flex flex-row py-2 bg-purple-neutral px-2 items-center">
+			<div @click="subnavCuenta" class="w-full flex flex-row py-2 bg-purple-neutral px-2 items-center">
 
 				<svg class="w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.2 25.72">
 					<title>volver</title>
@@ -329,9 +332,9 @@
 		<!-- nav cuenta end-->
 
 		<!-- nav categorias -->
-		<div class="absolute w-10/12 h-screen bg-white top-full  left-0 sm:hidden">
+		<div :class="[showOrNotSubnavCategorias?'left-0':'left-less-full','swipe-transition']" class="absolute w-10/12 h-screen z-30 bg-white top-full sm:hidden">
 			<!-- sub nav tittle -->
-			<div class="w-full flex flex-row py-2 bg-purple-neutral px-2 items-center">
+			<div @click="subnavCategorias" class="w-full flex flex-row py-2 bg-purple-neutral px-2 items-center">
 				<svg class="w-6 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.2 25.72">
 					<title>volver</title>
 					<g id="Capa_2" data-name="Capa 2">
@@ -450,12 +453,32 @@ export default {
 				nextNavTittle: ''
 			},
 			showOrNot:false,
+			showOrNotSubnavCuenta:false,
+			showOrNotSubnavCategorias: false
 		}
 	},
 	methods:{
 		showPrincipalMenu(){
 			if (this.showOrNot == false) {
 				this.showOrNot = true
+			}else{
+				this.showOrNot = false
+				this.showOrNotSubnavCuenta = false
+				this.showOrNotSubnavCategorias = false
+			}
+		},
+		subnavCuenta(){
+			if (this.showOrNotSubnavCuenta == false) {
+				this.showOrNotSubnavCuenta = true
+			}else{
+				this.showOrNotSubnavCuenta = false
+			}
+		},
+		subnavCategorias(){
+			if (this.showOrNotSubnavCategorias == false) {
+				this.showOrNotSubnavCategorias = true
+			}else{
+				this.showOrNotSubnavCategorias = false
 			}
 		},
 		eligeCategoria(index){
@@ -497,7 +520,7 @@ export default {
 		}
 
 		.swipe-transition{
-			transition: ease-in all .2s;
+			transition: ease-in all 1s;
 		}
 	}
 </style>
