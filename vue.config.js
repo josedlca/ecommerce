@@ -38,5 +38,11 @@ module.exports = {
       title: 'VentanaCarrito',
       chunks: ['chunk-vendors', 'chunk-common', 'clienteono'],
     },
+    pedidos: {
+      entry: './src/pages/mi_cuenta_pedidos/main.js',
+      template: 'public/mi-cuenta/pedidos.html',
+      filename: 'mi-cuenta/pedidos.html',
+      chunks: ['chunk-vendors', 'chunk-common', 'pedidos'],
+    }
   },
 };

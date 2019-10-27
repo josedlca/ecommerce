@@ -26,7 +26,7 @@ data-name="Capa 2">
         </g>
       </svg>
     </div>
-    <BreadCrumbs />
+    <BreadCrumbs :list="list_breadcrumbs"/>
     <main>
       <section class="container mx-auto px-3 sm:px-20">
         <BarraProducto class="hidden sm:inline-block" />
@@ -131,9 +131,7 @@ type="range" aria-label="rango"
                 </p>
                 <ul class="overflow-y-scroll h-32 lista-marcas">
                   <li class="w-full flex items-center relative py-1">
-                    <input id="revlon"
-type="checkbox" name="Revlon"
-/>
+                    <input id="revlon" type="checkbox" name="Revlon"/>
                     <label
                       class="hover:text-gray-intense w-full cursor-pointer relative checkLabel flex flex-row"
                       for="revlon"
@@ -149,9 +147,7 @@ type="checkbox" name="Revlon"
                     </label>
                   </li>
                   <li class="w-full flex items-center relative py-1">
-                    <input id="revlon"
-type="checkbox" name="Revlon"
-/>
+                    <input id="revlon" type="checkbox" name="Revlon"/>
                     <label
                       class="hover:text-gray-intense w-full cursor-pointer relative checkLabel flex flex-row"
                       for="revlon"
@@ -506,7 +502,6 @@ import BarraProducto from "@/components/BarraProducto";
 import Footer from "@/components/footer/Footer";
 
 export default {
-  name: "Filter",
   components: {
     CabeceraBarraUtilidades,
     BreadCrumbs,
@@ -515,10 +510,30 @@ export default {
   },
   data() {
     return {
-      showOrHide: "hide-mobile-filter"
+      showOrHide: "hide-mobile-filter",
+      list_breadcrumbs: []
     };
   },
+  mounted() {
+    this.list_breadcrumbs = this.getBreadCrumbs();
+  },
   methods: {
+    getBreadCrumbs() {
+      return [
+        {
+          'name' : 'Inicio',
+          'url' : 'index.html'
+        },
+        {
+          'name' : 'Acondicionadores',
+          'url' : 'filtro.html'
+        },
+        {
+          'name' : 'Amazonia',
+          'url' : 'filtro.html'
+        }
+      ]
+    },
     mostrarFiltros() {
       if (this.showOrHide === "hide-mobile-filter") {
         this.showOrHide = "show-mobile-filter";
