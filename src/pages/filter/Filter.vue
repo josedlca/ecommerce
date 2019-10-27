@@ -28,9 +28,44 @@
 								<p class="bebas-regular text-2.5xl text-purple-light">Filtrar por</p>
 							</div>
 
+<<<<<<< HEAD
+      <svg class="w-8"
+xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.05 28.2">
+        <title>conosvg</title>
+        <g id="Capa_2"
+data-name="Capa 2">
+          <g id="Filtro">
+            <path
+              class=" fill-current text-purple-neutral"
+              d="M16.52,0H30.35a2.52,2.52,0,0,1,2.21,1,2.3,2.3,0,0,1-.28,3.12c-2.65,3.1-5.32,6.19-8,9.28a20,20,0,0,1-1.7,2,4.17,4.17,0,0,0-1.41,3.87c.11,1,0,2,0,2.93a1.45,1.45,0,0,1-.72,1.4c-2.21,1.46-4.4,3-6.64,4.39a2,2,0,0,1-1.37.21c-.6-.14-.66-.74-.66-1.3,0-3.05,0-6.1,0-9.14a2.19,2.19,0,0,0-.47-1.26Q6.14,10.32.86,4.23A2.42,2.42,0,0,1,.23,1.41,2.55,2.55,0,0,1,2.85,0C7.41,0,12,0,16.52,0Zm-2.4,25c1.54-1,2.92-1.92,4.25-2.87a1.43,1.43,0,0,0,.52-1c.06-1.46,0-2.91.05-4.36a2.06,2.06,0,0,1,.43-1.2c3-3.56,6.07-7.09,9.11-10.63L30.65,2.4H2.41c.27.33.45.56.65.79Q8.28,9.27,13.5,15.33a2.37,2.37,0,0,1,.63,1.73C14.1,19.63,14.12,22.19,14.12,25Z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <BreadCrumbs :list="list_breadcrumbs"/>
+    <main>
+      <section class="container mx-auto px-3 sm:px-20">
+        <BarraProducto class="hidden sm:inline-block" />
+        <div class="w-full flex flex-row px-1 mb-5 sm:mb-14">
+          <!-- filter part -->
+          <div
+            :class="showOrHide"
+            class="bg-white sm:bg-transparent sm:relative sm:z-0 sm:w-3/12 sm:h-auto sm:mr-2"
+          >
+            <div class="w-full bg-white border-2 border-gray-superLight">
+              <div
+                class="w-full border-b-2 border-gray-superLight py-3 px-2 hidden sm:inline-block"
+              >
+                <p class="bebas-regular text-2.5xl text-purple-light">
+                  Filtrar por
+                </p>
+              </div>
+=======
 							<!-- responsive tittle -->
 							<div class=" w-full flex flex-row justify-between px-4 py-1 justify-end shadow-small-bottom mb-1 sm:hidden">
 								<p class="uppercase text-purple-neutral bebas-regular text-3xl">Filtros</p>
+>>>>>>> parent of 787aa55... formarting code
 
 								<svg @click="ocultarFiltros" class="w-8 fill-current text-purple-neutral" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 									<path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
@@ -145,6 +180,57 @@
 							</div>
 						</div>
 
+<<<<<<< HEAD
+              <div class="w-full py-3 px-2">
+                <p
+                  class="text-purple-neutral text-2xl mont-regular sm:mb-4 pb-3 sm:border-b-2 sm:border-purple-light"
+                >
+                  Marca
+                </p>
+                <ul class="overflow-y-scroll h-32 lista-marcas">
+                  <li class="w-full flex items-center relative py-1">
+                    <input id="revlon" type="checkbox" name="Revlon"/>
+                    <label
+                      class="hover:text-gray-intense w-full cursor-pointer relative checkLabel flex flex-row"
+                      for="revlon"
+                    >
+                      <p class="mont-regular text-gray-neutral sm:ml-5">
+                        Revlon
+                      </p>
+                      <p
+                        class="mont-semibold text-purple-neutral absolute sm:relative sm:hidden top-0 right-0 mr-6"
+                      >
+                        15
+                      </p>
+                    </label>
+                  </li>
+                  <li class="w-full flex items-center relative py-1">
+                    <input id="revlon" type="checkbox" name="Revlon"/>
+                    <label
+                      class="hover:text-gray-intense w-full cursor-pointer relative checkLabel flex flex-row"
+                      for="revlon"
+                    >
+                      <p class="mont-regular text-gray-neutral sm:ml-5">
+                        Revlon
+                      </p>
+                      <p
+                        class="mont-semibold text-purple-neutral absolute sm:relative sm:hidden top-0 right-0 mr-6"
+                      >
+                        15
+                      </p>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-full py-2 bg-purple-neutral text-center sm:hidden">
+              <p class="text-white bebas-regular uppercase text-2xl">
+                Limpiar filtro
+              </p>
+            </div>
+          </div>
+          <!-- filter part end-->
+=======
 						<div class="w-full flex flex-row cards flex-wrap">
 							<!-- customizado -->
 							<div class=" w-full sm:w-1/3 mb-4">
@@ -168,6 +254,7 @@
 												<p class=" line-through mr-2 text-2xs text-gray-light mont-semibold">S/64.00</p>
 												<span class="text-2xs text-x text-white bg-purple-intense rounded sm:rounded-none sm:bg-transparent sm:text-gray-light mont-semibold">-20%</span>
 											</div>
+>>>>>>> parent of 787aa55... formarting code
 
 											<!-- precio con descuento -->
 											<div class="flex flex-col sm:items-center mb-1">												
@@ -291,6 +378,52 @@ import BarraProducto from '@/components/BarraProducto'
 import Footer from "@/components/footer/Footer"
 
 export default {
+<<<<<<< HEAD
+  components: {
+    CabeceraBarraUtilidades,
+    BreadCrumbs,
+    BarraProducto,
+    Footer
+  },
+  data() {
+    return {
+      showOrHide: "hide-mobile-filter",
+      list_breadcrumbs: []
+    };
+  },
+  mounted() {
+    this.list_breadcrumbs = this.getBreadCrumbs();
+  },
+  methods: {
+    getBreadCrumbs() {
+      return [
+        {
+          'name' : 'Inicio',
+          'url' : 'index.html'
+        },
+        {
+          'name' : 'Acondicionadores',
+          'url' : 'filtro.html'
+        },
+        {
+          'name' : 'Amazonia',
+          'url' : 'filtro.html'
+        }
+      ]
+    },
+    mostrarFiltros() {
+      if (this.showOrHide === "hide-mobile-filter") {
+        this.showOrHide = "show-mobile-filter";
+      }
+    },
+    ocultarFiltros() {
+      if (this.showOrHide === "show-mobile-filter") {
+        this.showOrHide = "hide-mobile-filter";
+      }
+    }
+  }
+};
+=======
 	components:{
 		CabeceraBarraUtilidades,
 		BreadCrumbs,
@@ -316,6 +449,7 @@ export default {
 		}
 	},
 }
+>>>>>>> parent of 787aa55... formarting code
 </script>
 
 <style lang="css">
