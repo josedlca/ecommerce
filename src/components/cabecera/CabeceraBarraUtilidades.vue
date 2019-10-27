@@ -26,22 +26,15 @@
 
       <!-- brand and search bar  -->
       <div class="w-8/12 sm:w-7/12 self-center flex content-center">
-        <a class="self-center w-4/12 flex flex-col pr-1 sm:px-2"
-href="#">
-          <img :src="logo"
-alt="logo"
-/>
+        <a class="self-center w-4/12 flex flex-col pr-1 sm:px-2" href="#">
+          <img :src="logo" alt="logo"/>
           <p class="text-white text-4xs sm:text-xs mont-regular text-center">
             Profesional Hair
           </p>
         </a>
 
         <div class="self-center w-8/12 relative inline-block h-full searchInp sm:pr-2">
-          <input
-            class="w-full outline-none text-xs sm:text-lg px-1 py-2 sm:p-5 mont-regular rounded-lg border sm:border-2 border-white"
-            type="text"
-            placeholder="Buscar Producto..."
-          >
+          <input class="w-full outline-none text-xs sm:text-lg px-1 py-2 sm:p-5 mont-regular rounded-lg border sm:border-2 border-white" type="text" placeholder="Buscar Producto...">
           <button class="absolute right-0 top-0 px-2 sm:px-5 flex h-full focus:outline-none">
             <svg
               id="Capa_1"
