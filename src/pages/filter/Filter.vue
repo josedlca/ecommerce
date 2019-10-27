@@ -4,7 +4,7 @@
 			<CabeceraBarraUtilidades/>
 			<!-- <CabeceraBarraNav/> -->
 		</header>
-		<div @click="mostrarFiltros" class=" w-full flex flex-row px-4 py-1 justify-end shadow-small-bottom mb-6">
+		<div @click="mostrarFiltros" class=" w-full flex flex-row px-4 py-1 justify-end shadow-small-bottom mb-6 inline-blok sm:hidden">
 			<p class="uppercase text-purple-neutral bebas-regular text-3xl">Filtros</p>
 			
 			<svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.05 28.2">
@@ -351,24 +351,5 @@ export default {
 		display: flex;
 		justify-content: center;
     	align-items: center;
-	}
-
-	.hide-mobile-filter{
-		width: 100%;
-		height: 100vh;
-		position: fixed;
-		z-index: 20;
-		top: 0;
-		left: -100%;
-		transition: ease-in all .2s
-	}
-	.show-mobile-filter{
-		width: 100%;
-		height: 100vh;
-		position: fixed;
-		z-index: 20;
-		top: 0;
-		left: 0;
-		transition: ease-in all .2s
 	}
 </style>
