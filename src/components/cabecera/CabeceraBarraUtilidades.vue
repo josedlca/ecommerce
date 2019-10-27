@@ -174,7 +174,7 @@
 		<!-- base opaca end-->
 
 		<!-- nav principal mobile -->
-		<div :class="[showOrNot?'left-0':'left-less-full', showOrNot?'z-20':'z-0']" class="absolute w-10/12 h-screen bg-white top-full sm:hidden">
+		<div :class="[showOrNot?'left-0':'left-less-full', showOrNot?'z-20':'z-0', 'swipe-transition']" class="absolute w-10/12 h-screen bg-white top-full sm:hidden">
 			<div class="w-full px-2">
 				<div class="w-full flex flex-row py-2 items-center border-b border-purple-neutral">
 					<svg class="w-8 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.54 35.13">
@@ -448,7 +448,7 @@ export default {
 				nextNavSrc:'',
 				nextNavTittle: ''
 			},
-			showOrNot:true,
+			showOrNot:false,
 		}
 	},
 	methods:{
