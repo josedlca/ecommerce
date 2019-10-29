@@ -174,7 +174,7 @@
 		</div>
 
 		<!-- base opaca -->
-		<div class="absolute w-full h-screen top-full z-10 left-0 bg-black opacity-50 sm:hidden"></div>
+		<div :class="[showOrNot?'left-0':'left-less-full','swipe-transition']" class="absolute w-full h-screen top-full z-10 bg-black opacity-50 sm:hidden"></div>
 		<!-- base opaca end-->
 
 		<!-- nav principal mobile -->
@@ -376,9 +376,9 @@
 		<!-- nav categorias end-->
 
 		<!-- nav despues de elegir una categoria -->
-		<div class="absolute w-10/12 h-screen bg-white top-full  left-0 sm:hidden">
+		<div :class="[showOrNotSubnavCategoriasEach?'left-0':'left-less-full','swipe-transition']" class="absolute w-10/12 h-screen z-30 bg-white top-full sm:hidden">
 
-			<div class="w-full flex flex-row py-2 bg-purple-neutral px-2 mb-3 items-center">
+			<div @click="hideEachCategory" class="w-full flex flex-row py-2 bg-purple-neutral px-2 mb-3 items-center">
 				<svg class="w-6 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.2 25.72">
 					<title>volver</title>
 					<g id="Capa_2" data-name="Capa 2">
@@ -454,7 +454,8 @@ export default {
 			},
 			showOrNot:false,
 			showOrNotSubnavCuenta:false,
-			showOrNotSubnavCategorias: false
+			showOrNotSubnavCategorias: false,
+			showOrNotSubnavCategoriasEach:false
 		}
 	},
 	methods:{
@@ -465,6 +466,7 @@ export default {
 				this.showOrNot = false
 				this.showOrNotSubnavCuenta = false
 				this.showOrNotSubnavCategorias = false
+				this.showOrNotSubnavCategoriasEach = false
 			}
 		},
 		subnavCuenta(){
@@ -484,6 +486,14 @@ export default {
 		eligeCategoria(index){
 			this.nextNav.nextNavTittle = this.categoriasIcons[index].categoriName,
 			this.nextNav.nextNavSrc = this.categoriasIcons[index].src
+			if (this.showOrNotSubnavCategoriasEach==false) {
+				this.showOrNotSubnavCategoriasEach = true
+			}
+		},
+		hideEachCategory(){
+			if (this.showOrNotSubnavCategoriasEach==true) {
+				this.showOrNotSubnavCategoriasEach = false
+			}
 		}
 	}
 }
@@ -520,7 +530,7 @@ export default {
 		}
 
 		.swipe-transition{
-			transition: ease-in all 1s;
+			transition: ease-in all .2s;
 		}
 	}
 </style>
